@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@290395366:1505898723958" name="Decision_Lookup_Result" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Decision_Lookup_Result" default_exit_state="Retry_Limit_Reached">
+        <exit_state name="Lookup_Success" conjugate="and">
+            <number operator="equal">
+                <data>
+                    <element name="Context_Service_Customer_Lookup" variable="customer_count" />
+                </data>
+                <constant_number value="1" />
+            </number>
+        </exit_state>
+        <exit_state name="MultipleOrZero_Customers_Found" conjugate="and">
+            <number operator="not_equal">
+                <data>
+                    <element name="Context_Service_Customer_Lookup" variable="customer_count" />
+                </data>
+                <constant_number value="1" />
+            </number>
+        </exit_state>
+        <exit_state name="Retry_Lookup" conjugate="and">
+            <number operator="less_equal">
+                <caller_activity>
+                    <times_elemvis element="Context_Service_Customer_Lookup" />
+                </caller_activity>
+                <constant_number value="2" />
+            </number>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>
