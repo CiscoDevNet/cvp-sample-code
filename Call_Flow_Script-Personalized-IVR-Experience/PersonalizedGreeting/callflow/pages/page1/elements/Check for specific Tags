@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@1628484478:1508342737555" name="Check for specific Tags" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Check for specific Tags" default_exit_state="Tag_Exist">
+        <exit_state name="No_Tags" conjugate="and">
+            <boolean check_existence="yes" value="false">
+                <data>
+                    <element name="Read Activity" variable="tags" />
+                </data>
+            </boolean>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

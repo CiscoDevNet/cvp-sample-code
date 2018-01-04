@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@940095467:1508352642279" name="Create Activity with call reason" version="6.0.1">
+<config>
+<settings>
+<setting name="customerId">{Data.Element.Context_Service_Customer_Lookup.customer_id}</setting>
+<setting name="tags"/>
+<setting name="fieldsets">cisco.base.pod</setting>
+<setting name="Context_Notes">{Data.Element.Context_Service_Customer_Lookup.context_first_name} calling again for same reason: {Data.Element.Read Activity.tags}</setting>
+</settings>
+<element_data>
+<data create_when="Before" name="TagFromPOD" storable="true" type="String">{Data.Element.Read Activity.tags[0];}</data>
+<data create_when="Before" name="TagFromDifferentElement" storable="true" type="String">{Data.Element.Read Activity.TAG}</data>
+</element_data>
+</config>
+</action_element>

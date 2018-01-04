@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@744010930:1505898615880" name="page1" version="6.0.1">
+<element height="46" id="Element@1494862569:1505898615880" name="Start Of Call" start_of_call="true" type="Page Entry" width="113" x="293" y="7">
+<exit_states>
+<exit_state name="next" target="Element@2140099381:1506630195012"/>
+</exit_states>
+</element>
+<element height="46" id="Element@776155967:1505898629442" name="Context_Service_Customer_Lookup" src="com.audium.server.action.contextservice.CustomerLookUpAction" type="Action Element" width="235" x="232" y="219">
+<exit_states>
+<exit_state name="done" target="Element@290395366:1505898723958"/>
+<exit_state name="Java Exception-Exception" target="Element@290395366:1505898723958">
+<bendpoint>
+<dim1 x="-114" y="98"/>
+<dim2 x="-115" y="-121"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@2071019449:1505898632724" name="Welcome message" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="196" x="251" y="108">
+<exit_states>
+<exit_state name="done" target="Element@776155967:1505898629442"/>
+</exit_states>
+</element>
+<element height="46" id="Element@290395366:1505898723958" name="Decision_Lookup_Result" type="Decision" width="177" x="262" y="438">
+<exit_states>
+<exit_state name="Lookup_Success" target="Element@237498208:1508342303086"/>
+<exit_state name="Retry_Lookup" target="Element@776155967:1505898629442">
+<bendpoint>
+<dim1 x="126" y="-119"/>
+<dim2 x="127" y="100"/>
+</bendpoint>
+</exit_state>
+<exit_state name="Retry_Limit_Reached" target="Element@1399025511:1506685949376">
+<bendpoint>
+<dim1 x="160" y="78"/>
+<dim2 x="138" y="-78"/>
+</bendpoint>
+</exit_state>
+<exit_state name="MultipleOrZero_Customers_Found" target="Element@1399025511:1506685949376">
+<bendpoint>
+<dim1 x="-124" y="85"/>
+<dim2 x="-146" y="-71"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@325887803:1506080955033" name="CVP Subdialog Return_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="183" x="1101" y="576">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="30" id="Element@2058533187:1506525389682" type="Comment" width="279" x="50" y="186">
+<comment><![CDATA[Context Service Customer Lookup: 
+Search for customer record based on phone number.]]></comment>
+</element>
+<element height="46" id="Element@472522248:1506525812728" name="Activity without customer" src="com.audium.server.action.contextservice.AddPodAction" type="Action Element" width="187" x="775" y="587">
+<exit_states>
+<exit_state name="done" target="Element@325887803:1506080955033"/>
+</exit_states>
+</element>
+<element height="46" id="Element@2140099381:1506630195012" name="CVP Subdialog Start_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogStartElement" type="Subdialog Start" width="172" x="16" y="46">
+<exit_states>
+<exit_state name="done" target="Element@2071019449:1505898632724"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1721957248:1506632358825" name="Greet customer by name" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="245" x="823" y="247">
+<exit_states>
+<exit_state name="done" target="Element@1214299361:1508376757597"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1399025511:1506685949376" name="Greet customer without name" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="245" x="250" y="594">
+<exit_states>
+<exit_state name="done" target="Element@472522248:1506525812728"/>
+</exit_states>
+</element>
+<element height="15" id="Element@735123054:1506686018773" type="Comment" width="122" x="284" y="93">
+<comment><![CDATA[Play welcome message]]></comment>
+</element>
+<element height="105" id="Element@1571560041:1506686262225" type="Comment" width="269" x="9" y="388">
+<comment><![CDATA[Decision Node will do following:
+- If one customer is found, lookup is successful 
+		=> Go to next step
+- If 0 or more that 1 customers are found
+		=> Go to next step
+- If lookup results in exception 
+		=> retry lookup (total of 2 times)]]></comment>
+</element>
+<element height="45" id="Element@1813051320:1506686927854" type="Comment" width="303" x="253" y="640">
+<comment><![CDATA[At this point, we may have found 0 or multiple customers
+or lookup retry limit is reached. 
+Greet customer and then move to the next step.]]></comment>
+</element>
+<element height="30" id="Element@317113031:1506686949951" type="Comment" width="263" x="782" y="635">
+<comment><![CDATA[Create an activity without customer record since
+lookup does not return a unique customer record.]]></comment>
+</element>
+<element height="46" id="Element@237498208:1508342303086" name="Read Activity" src="com.audium.server.action.contextservice.ReadPodAction" type="Action Element" width="122" x="562" y="423">
+<exit_states>
+<exit_state name="done" target="Element@1628484478:1508342737555"/>
+</exit_states>
+</element>
+<element height="46" id="Element@532801892:1508342413242" name="Greet customer by name along with TAG" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="319" x="910" y="47">
+<exit_states>
+<exit_state name="done" target="Element@1853077265:1508350242587"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1628484478:1508342737555" name="Check for specific Tags" type="Decision" width="172" x="534" y="181">
+<exit_states>
+<exit_state name="Tag_Exist" target="Element@532801892:1508342413242"/>
+<exit_state name="No_Tags" target="Element@1721957248:1506632358825"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1853077265:1508350242587" name="Capture customer input" src="com.audium.server.voiceElement.digit.MBasicDigit" type="Voice Element" width="176" x="1100" y="142">
+<exit_states>
+<exit_state name="done" target="Element@810736445:1508350390947"/>
+<exit_state name="max_nomatch" target="Element@810736445:1508350390947"/>
+<exit_state name="max_noinput" target="Element@810736445:1508350390947"/>
+</exit_states>
+</element>
+<element height="46" id="Element@810736445:1508350390947" name="Decision based on input" type="Decision" width="177" x="1096" y="243">
+<exit_states>
+<exit_state name="SameIssue" target="Element@940095467:1508352642279"/>
+<exit_state name="DifferentIssue" target="Element@1214299361:1508376757597"/>
+</exit_states>
+</element>
+<element height="46" id="Element@940095467:1508352642279" name="Create Activity with call reason" src="com.audium.server.action.contextservice.AddPodAction" type="Action Element" width="212" x="1083" y="419">
+<exit_states>
+<exit_state name="done" target="Element@325887803:1506080955033"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1214299361:1508376757597" name="Create Activity" src="com.audium.server.action.contextservice.AddPodAction" type="Action Element" width="127" x="889" y="422">
+<exit_states>
+<exit_state name="done" target="Element@325887803:1506080955033"/>
+</exit_states>
+</element>
+<element height="15" id="Element@631784663:1508782553972" type="Comment" width="195" x="567" y="471">
+<comment><![CDATA[Lookup last activity for this customer]]></comment>
+</element>
+<element height="30" id="Element@647612437:1508782572925" type="Comment" width="125" x="538" y="149">
+<comment><![CDATA[Check if customer's last
+activity had a TAG]]></comment>
+</element>
+<element height="30" id="Element@2010393350:1508782672550" type="Comment" width="327" x="913" y="14">
+<comment><![CDATA[Greet customer by name
+Also ask if customer is calling for same reason (based on TAG)]]></comment>
+</element>
+<element height="45" id="Element@1629930104:1508782750144" type="Comment" width="148" x="949" y="146">
+<comment><![CDATA[Provide choice to customer 
+to indicate if customer is
+calling for same reason.]]></comment>
+</element>
+</page>
