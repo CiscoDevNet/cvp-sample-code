@@ -73,7 +73,7 @@ This IVR script creates activities in Context Service as part of the call flow. 
   * Create activity
   * Create activity with call reason
 
-![](addFieldsets.gif)
+![](addfieldsets.gif)
 
 3. Click **Fieldsets** and enter your chosen fieldsets as comma separated values. The Customer Context gadget dynamically displays the fields associated with your chosen fieldsets.
 
