@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@9752088:1253220321299" name="Phone Number Valid" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Phone Number Valid" default_exit_state="false">
+        <exit_state name="true" conjugate="and">
+            <number operator="greater_equal">
+                <data>
+                    <element name="Ask For Callback Number" variable="value" />
+                </data>
+                <constant_number value="0" />
+            </number>
+            <string operator="not_contains">
+                <data>
+                    <element name="Ask For Callback Number" variable="value" />
+                </data>
+                <constant_string value="*" />
+            </string>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

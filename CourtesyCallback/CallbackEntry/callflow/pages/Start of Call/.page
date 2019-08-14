@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@8072489:1227704996421" name="Start of Call" version="6.0.1">
+<element height="46" id="Element@22284919:1227704996421" name="Start Of Call" start_of_call="true" type="Page Entry" width="120" x="52" y="17">
+<exit_states>
+<exit_state name="next" target="Element@5298117:1229802117953"/>
+</exit_states>
+</element>
+<element height="46" id="Element@16239569:1227711056109" name="Enter Queue_01" src="com.cisco.cvp.vxml.custelem.callback.EnterQueue" type="Decision Element" width="142" x="417" y="17">
+<exit_states>
+<exit_state name="done" target="Element@18834451:1228689755453"/>
+<exit_state name="error" target="Element@30361190:1398248186312">
+<bendpoint>
+<dim1 x="-261" y="88"/>
+<dim2 x="100" y="-198"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@26801639:1227711164968" name="Validate_01" src="com.cisco.cvp.vxml.custelem.callback.Validate" type="Voice Element" width="117" x="487" y="146">
+<exit_states>
+<exit_state name="preemptive" target="Element@12648160:1228069006062">
+<bendpoint>
+<dim1 x="115" y="80"/>
+<dim2 x="76" y="-61"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="74" y="154"/>
+<dim2 x="57" y="-4"/>
+</bendpoint>
+</exit_state>
+<exit_state name="none" target="Element@23266699:1228087122015"/>
+<exit_state name="refresh" target="Element@23543153:1227877687031"/>
+<exit_state name="error" target="Element@11071940:1398248189854"/>
+</exit_states>
+</element>
+<element height="46" id="Element@23543153:1227877687031" name="SetQueueDefaults_01" src="com.cisco.cvp.vxml.custelem.callback.SetQueueDefaults" type="Decision Element" width="173" x="316" y="392">
+<exit_states>
+<exit_state name="done" target="Element@14569291:1227877765031"/>
+<exit_state name="error" target="Element@11071940:1398248189854"/>
+</exit_states>
+</element>
+<element height="46" id="Element@14569291:1227877765031" name="Validate_02" src="com.cisco.cvp.vxml.custelem.callback.Validate" type="Voice Element" width="117" x="347" y="565">
+<exit_states>
+<exit_state name="preemptive" target="Element@12648160:1228069006062"/>
+<exit_state name="none" target="Element@23266699:1228087122015">
+<bendpoint>
+<dim1 x="-135" y="-206"/>
+<dim2 x="-17" y="201"/>
+</bendpoint>
+</exit_state>
+<exit_state name="refresh" target="Element@23266699:1228087122015">
+<bendpoint>
+<dim1 x="-162" y="-101"/>
+<dim2 x="128" y="346"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="-170" y="-205"/>
+<dim2 x="-52" y="202"/>
+</bendpoint>
+</exit_state>
+<exit_state name="error" target="Element@30361190:1398248186312">
+<bendpoint>
+<dim1 x="-225" y="-91"/>
+<dim2 x="53" y="171"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@337177:1228068838125" name="Preemptive" type="Page Entry" width="146" x="734" y="4">
+<exit_states>
+<exit_state name="next" target="Element@15941165:1228078653953"/>
+</exit_states>
+</element>
+<element height="46" id="Element@12648160:1228069006062" name="Preemptive" type="Page Connector" width="114" x="516" y="276">
+<page_connector target="Element@337177:1228068838125">Preemptive<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@15941165:1228078653953" name="PreemptivePrompt1" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="162" x="738" y="83">
+<exit_states>
+<exit_state name="done" target="Element@24166221:1228088646375"/>
+</exit_states>
+</element>
+<element height="46" id="Element@23266699:1228087122015" name="Queue" type="Page Connector" width="87" x="238" y="148">
+<page_connector target="Element@13804701:1228135733953">Queue<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@24166221:1228088646375" name="PreemptivePrompt2" src="com.audium.server.voiceElement.menu.MYesNoMenu" type="Voice Element" width="162" x="735" y="156">
+<exit_states>
+<exit_state name="yes" target="Element@6724740:1228134510359">
+<bendpoint>
+<dim1 x="-22" y="109"/>
+<dim2 x="-14" y="-78"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="-16" y="152"/>
+<dim2 x="-8" y="-35"/>
+</bendpoint>
+</exit_state>
+<exit_state name="no" target="Element@16873618:1228134135609">
+<bendpoint>
+<dim1 x="59" y="65"/>
+<dim2 x="11" y="-41"/>
+</bendpoint>
+</exit_state>
+<exit_state name="max_nomatch" target="Element@16873618:1228134135609">
+<bendpoint>
+<dim1 x="76" y="36"/>
+<dim2 x="28" y="-70"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="82" y="61"/>
+<dim2 x="40" y="-43"/>
+</bendpoint>
+</exit_state>
+<exit_state name="max_noinput" target="Element@16873618:1228134135609">
+<bendpoint>
+<dim1 x="8" y="47"/>
+<dim2 x="-34" y="-57"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@16873618:1228134135609" name="Queue" type="Page Connector" width="87" x="808" y="260">
+<page_connector target="Element@13804701:1228135733953">Queue<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@6724740:1228134510359" name="Wants Callback" type="Page Connector" width="137" x="738" y="343">
+<page_connector target="Element@3151821:1228136085359">Wants Callback<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@18834451:1228689755453" name="ewt in Minutes" src="com.audium.server.action.math.MathAction" type="Action Element" width="133" x="572" y="79">
+<exit_states>
+<exit_state name="done" target="Element@26801639:1227711164968"/>
+</exit_states>
+</element>
+<element height="46" id="Element@5298117:1229802117953" name="CVP Subdialog Start_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogStartElement" type="Subdialog Start" width="186" x="205" y="16">
+<exit_states>
+<exit_state name="done" target="Element@16239569:1227711056109"/>
+</exit_states>
+</element>
+<element height="15" id="Element@3908274:1255642947976" type="Comment" width="241" x="284" y="617">
+<comment><![CDATA[CallbackEntry Script provided with Cisco CVP.]]></comment>
+</element>
+<element height="120" id="Element@26589704:1264630276381" type="Comment" width="137" x="50" y="64">
+<comment><![CDATA[IMPORTANT:
+Default Audio Path URI
+must be set in the 
+Project Properties
+to point at a media server 
+containing all 
+Courtesy Callback 
+audio files.]]></comment>
+</element>
+<element height="46" id="Element@30361190:1398248186312" name="PlayErrorAudio1" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="135" x="60" y="303">
+<exit_states>
+<exit_state name="done" target="Element@23266699:1228087122015"/>
+</exit_states>
+</element>
+<element height="46" id="Element@11071940:1398248189854" name="PlayErrorAudio2" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="135" x="315" y="238">
+<exit_states>
+<exit_state name="done" target="Element@23266699:1228087122015"/>
+</exit_states>
+</element>
+</page>

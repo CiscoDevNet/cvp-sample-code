@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@23545234:1228688231765" name="page1" version="6.0.1">
+<element height="46" id="Element@25264552:1228688231765" name="Start Of Call" start_of_call="true" type="Page Entry" width="120" x="280" y="73">
+<exit_states>
+<exit_state name="next" target="Element@20622431:1228689102343"/>
+</exit_states>
+</element>
+<element height="46" id="Element@20622431:1228689102343" name="CVP Subdialog Start_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogStartElement" type="Subdialog Start" width="186" x="267" y="146">
+<exit_states>
+<exit_state name="done" target="Element@31412387:1257539037907"/>
+</exit_states>
+</element>
+<element height="46" id="Element@6606816:1228689234843" name="Queue1" src="com.audium.server.voiceElement.internal.SubdialogInvokeElement" type="Subdialog Invoke" width="150" x="63" y="491">
+<exit_states>
+<exit_state name="done" target="Element@6133769:1229026400578"/>
+</exit_states>
+</element>
+<element height="46" id="Element@30603717:1229026334531" name="Queue2" src="com.audium.server.voiceElement.internal.SubdialogInvokeElement" type="Subdialog Invoke" width="150" x="474" y="428">
+<exit_states>
+<exit_state name="done" target="Element@4465067:1229026368281"/>
+</exit_states>
+</element>
+<element height="46" id="Element@4465067:1229026368281" name="Get Status_02" src="com.cisco.cvp.vxml.custelem.callback.GetStatus" type="Decision Element" width="130" x="459" y="548">
+<exit_states>
+<exit_state name="done" target="Element@6606816:1228689234843"/>
+<exit_state name="error" target="Element@6606816:1228689234843">
+<bendpoint>
+<dim1 x="-115" y="-18"/>
+<dim2 x="69" y="56"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@6133769:1229026400578" name="Get Status_01" src="com.cisco.cvp.vxml.custelem.callback.GetStatus" type="Decision Element" width="166" x="250" y="372">
+<exit_states>
+<exit_state name="done" target="Element@30603717:1229026334531"/>
+<exit_state name="error" target="Element@30603717:1229026334531">
+<bendpoint>
+<dim1 x="114" y="35"/>
+<dim2 x="32" y="-44"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@6624917:1233661435859" name="UpdateStatus_01" src="com.cisco.cvp.vxml.custelem.callback.UpdateStatus" type="Decision Element" width="147" x="60" y="330">
+<exit_states>
+<exit_state name="done" target="Element@6606816:1228689234843"/>
+<exit_state name="error" target="Element@17145814:1233661497921">
+<bendpoint>
+<dim1 x="-32" y="41"/>
+<dim2 x="-33" y="-45"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@17145814:1233661497921" name="Return to ICM and end call" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="202" x="55" y="186">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="13" id="Element@16584305:1255643019819" type="Comment" width="223" x="243" y="628">
+<comment><![CDATA[CallbackQueue Script provided with Cisco CVP.]]></comment>
+</element>
+<element height="46" id="Element@31412387:1257539037907" name="Decision_01" type="Decision" width="118" x="496" y="202">
+<exit_states>
+<exit_state name="callbackError" target="Element@29246539:1257539187718"/>
+<exit_state name="done" target="Element@6624917:1233661435859"/>
+</exit_states>
+</element>
+<element height="46" id="Element@29246539:1257539187718" name="Announce Callback Error" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="190" x="471" y="310">
+<exit_states>
+<exit_state name="done" target="Element@6624917:1233661435859"/>
+</exit_states>
+</element>
+<element height="104" id="Element@14365016:1264630531796" type="Comment" width="154" x="139" y="75">
+<comment><![CDATA[IMPORTANT:
+Default Audio Path URI
+must be set in the 
+Project Properties
+to point at a media server 
+containing all 
+Courtesy Callback 
+audio files.]]></comment>
+</element>
+<element height="26" id="Element@8918836:1264696181243" type="Comment" width="360" x="164" y="24">
+<comment><![CDATA[Cisco Systems, Inc. requires that the CallbackQueue script must NOT be 
+customized in any way beyond the required Default Audio Path URI change.]]></comment>
+</element>
+</page>

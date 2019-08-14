@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@31170932:1228212701937" name="ANI existence check" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="ANI existence check" default_exit_state="not_exists">
+        <exit_state name="exists" conjugate="and">
+            <boolean check_existence="yes" value="true">
+                <data>
+                    <session name="CallbackNumber" />
+                </data>
+            </boolean>
+            <number operator="greater_equal">
+                <data>
+                    <session name="CallbackNumber" />
+                </data>
+                <constant_number value="0" />
+            </number>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

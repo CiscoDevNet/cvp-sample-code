@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@925548:1234006944421" name="Cancel or Retry" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Cancel or Retry" default_exit_state="retry">
+        <exit_state name="cancel" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="Update DB to COMPLETED" variable="result" />
+                </data>
+                <constant_string value="cancel" />
+            </string>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

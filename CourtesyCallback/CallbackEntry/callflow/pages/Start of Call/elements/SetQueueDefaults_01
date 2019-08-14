@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision_element id="Element@23543153:1227877687031" name="SetQueueDefaults_01" version="6.0.1">
+<config>
+<settings>
+<setting name="qname">billing</setting>
+<setting name="maxpct">100</setting>
+<setting name="maxcnt">9999999</setting>
+<setting name="refresh">1</setting>
+<setting name="maxewt">900</setting>
+<setting name="tz">America/New_York</setting>
+<setting name="keepalive">180</setting>
+<setting name="dnis">5901</setting>
+<setting name="reconnect_time">30</setting>
+<setting name="cli">8005551212</setting>
+<setting name="SLA_time">60</setting>
+<setting name="burst">10:1</setting>
+<setting name="rna">30</setting>
+<setting name="su">00:00:00-23:59:59</setting>
+<setting name="mo">00:00:00-23:59:59</setting>
+<setting name="tu">00:00:00-23:59:59</setting>
+<setting name="we">00:00:00-23:59:59</setting>
+<setting name="th">00:00:00-23:59:59</setting>
+<setting name="fr">00:00:00-23:59:59</setting>
+<setting name="sa">00:00:00-23:59:59</setting>
+<setting name="noresponse">3;300</setting>
+<setting name="busy">3;300</setting>
+<setting name="noanswer">3;300</setting>
+<setting name="trunksbusy">3;60</setting>
+<setting name="error">3;60</setting>
+</settings>
+</config>
+</decision_element>

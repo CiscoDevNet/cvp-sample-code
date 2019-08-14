@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<connector id="Element@5403403:1253222816862" name="Queue" version="6.0.1">
+<page_connector target="Element@13804701:1228135733953">Queue<config/>
+</page_connector>
+</connector>

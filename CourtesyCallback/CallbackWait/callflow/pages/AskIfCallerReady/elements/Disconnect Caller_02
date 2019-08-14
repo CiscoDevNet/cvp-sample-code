@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@2421161:1234007011500" name="Disconnect Caller_02" version="6.0.1">
+<config>
+<settings>
+<setting name="PROBE TYPE">Disconnect Caller</setting>
+</settings>
+</config>
+</voice_element>

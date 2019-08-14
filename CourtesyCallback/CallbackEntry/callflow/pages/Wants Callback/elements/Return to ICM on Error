@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subdialog_return id="Element@18632438:1257437888716" name="Return to ICM on Error" version="6.0.1">
+<config>
+<settings>
+<setting name="caller_input">true</setting>
+<setting name="FromExtVXML0">CallbackType={Data.Session.CallbackType};</setting>
+<setting name="FromExtVXML1">qname={Data.Session.qname};queueapp={Data.Session.queueapp};</setting>
+<setting name="FromExtVXML2">qtime={Data.Session.qtime};</setting>
+<setting name="FromExtVXML3">ccError=true</setting>
+</settings>
+</config>
+</subdialog_return>

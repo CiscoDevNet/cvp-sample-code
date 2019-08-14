@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@24708184:1255119152240" name="Caller Choice Result" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Caller Choice Result" default_exit_state="error">
+        <exit_state name="error" conjugate="or">
+            <number operator="equal">
+                <data>
+                    <session name="AnnounceErrorsExceeded" />
+                </data>
+                <constant_number value="1" />
+            </number>
+        </exit_state>
+        <exit_state name="option 1" conjugate="and">
+            <number operator="equal">
+                <data>
+                    <element name="Ask if ready" variable="value" />
+                </data>
+                <constant_number value="1" />
+            </number>
+        </exit_state>
+        <exit_state name="option 2" conjugate="and">
+            <number operator="equal">
+                <data>
+                    <element name="Ask if ready" variable="value" />
+                </data>
+                <constant_number value="2" />
+            </number>
+        </exit_state>
+        <exit_state name="option 3" conjugate="and">
+            <number operator="equal">
+                <data>
+                    <element name="Ask if ready" variable="value" />
+                </data>
+                <constant_number value="3" />
+            </number>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

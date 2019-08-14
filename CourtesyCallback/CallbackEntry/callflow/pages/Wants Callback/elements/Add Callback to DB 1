@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision_element id="Element@3080576:1228215694156" name="Add Callback to DB 1" version="6.0.1">
+<config>
+<settings>
+<setting name="ani">{Data.Session.CallbackNumber}</setting>
+<setting name="rec">http://{Data.Session.thishost}:7000/CVP/audio/{Data.Element.Record Name.filename}</setting>
+<setting name="recFilePath">{Data.Element.Record Name.filepath}</setting>
+<setting name="recFileRetention">240</setting>
+<setting name="recFileCleanUpInterval">30</setting>
+</settings>
+</config>
+</decision_element>

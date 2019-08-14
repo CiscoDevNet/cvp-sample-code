@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@25852780:1234006944421" name="Reconnect Caller" version="6.0.1">
+<config>
+<settings>
+<setting name="dn">{Data.Element.Get Status_01.dn}</setting>
+<setting name="cli">{Data.Element.Get Status_01.cli}</setting>
+<setting name="rna">{Data.Element.Get Status_01.rna}</setting>
+<setting name="uui">uuuuu</setting>
+</settings>
+</config>
+</voice_element>

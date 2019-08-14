@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@24166221:1228088646375" name="PreemptivePrompt2" version="6.0.1">
+<config>
+<settings>
+<setting name="inputmode">dtmf</setting>
+<setting name="noinput_timeout">5s</setting>
+<setting name="max_noinput_count">1</setting>
+<setting name="max_nomatch_count">3</setting>
+<setting name="replay">false</setting>
+<setting name="modal">false</setting>
+</settings>
+<audio>
+<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri="CCPreemptivePart1.wav"/>
+</audio_item_config>
+</audio_item>
+<audio_item name="audio item 2" type="say_it_smart">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<say_it_smart input_format="standard" output_format="no_trailing_0s" type="number">{Data.Element.ewt in Minutes.ewt_minutes}</say_it_smart>
+<recorded_audio default_audio_path="true" fileset="enhanced" type="wav">../sys</recorded_audio>
+</audio_item_config>
+</audio_item>
+<audio_item name="audio item 3" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri="CCPreemptivePart2.wav"/>
+</audio_item_config>
+</audio_item>
+<audio_item name="audio item 4" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri="CCStayOnLine.wav"/>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+<session_data>
+<data create_when="After" name="CallbackType">preemptive</data>
+</session_data>
+</config>
+</voice_element>

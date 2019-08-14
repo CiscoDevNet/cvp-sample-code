@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@2356633:1234006738421" name="Is wait more than 3 mins" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Is wait more tan 3 mins" default_exit_state="yes">
+        <exit_state name="no" conjugate="and">
+            <number operator="less">
+                <data>
+                    <element name="Get Status_01" variable="ewt" />
+                </data>
+                <constant_number value="180" />
+            </number>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

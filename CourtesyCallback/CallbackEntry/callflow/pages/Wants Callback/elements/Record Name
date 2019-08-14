@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@17637582:1228694982234" name="Record Name" version="6.0.1">
+<config>
+<settings>
+<setting name="noinput_timeout">5s</setting>
+<setting name="max_noinput_count">3</setting>
+<setting name="start_with_beep">true</setting>
+<setting name="terminate_on_dtmf">true</setting>
+<setting name="keep_recording_on_hangup">false</setting>
+<setting name="max_record_time">10</setting>
+<setting name="final_silence">3s</setting>
+<setting name="filename"/>
+<setting name="file_type">wav</setting>
+<setting name="extension"/>
+<setting name="path">..\webapps\CVP\audio\</setting>
+<setting name="ftp_host"/>
+</settings>
+<audio>
+<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri="CCRecordName.wav"/>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+<session_data>
+<data create_when="After" name="CallbackNumber">{Data.Session.ani}</data>
+</session_data>
+</config>
+</voice_element>

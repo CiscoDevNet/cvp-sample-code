@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@18834451:1228689755453" name="ewt in Minutes" version="6.0.1">
+<config>
+<settings>
+<setting name="type">Element</setting>
+<setting name="name">ewt_minutes</setting>
+<setting name="expression">((({Data.Session.ewt}/60 * 1000000000000000) - (({Data.Session.ewt}/60 * 1000000000000000) % 1000000000000000))/1000000000000000) + 1</setting>
+</settings>
+</config>
+</action_element>

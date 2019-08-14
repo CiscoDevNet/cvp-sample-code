@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subdialog_invoke id="Element@6606816:1228689234843" name="Queue1" version="6.0.1">
+<config>
+<settings>
+<setting name="destination">Server?callid={Data.Session.callid}&amp;application={Data.Session.queueapp}</setting>
+<setting name="type">true</setting>
+<setting name="params"/>
+<setting name="returns"/>
+</settings>
+</config>
+</subdialog_invoke>

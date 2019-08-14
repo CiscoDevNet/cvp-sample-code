@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@15636835:1234006738421" name="Short Wait" version="6.0.1">
+<config>
+<settings>
+<setting name="secs">15</setting>
+</settings>
+</config>
+</voice_element>

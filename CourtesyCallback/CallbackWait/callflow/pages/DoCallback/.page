@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@20240385:1234006516328" name="DoCallback" version="6.0.1">
+<element height="46" id="Element@16247393:1234006944421" name="Update DB to COMPLETED" src="com.cisco.cvp.vxml.custelem.callback.UpdateStatus" type="Decision Element" width="188" x="-10" y="243">
+<exit_states>
+<exit_state name="done" target="Element@925548:1234006944421"/>
+<exit_state name="error" target="Element@925548:1234006944421">
+<bendpoint>
+<dim1 x="-38" y="39"/>
+<dim2 x="-33" y="-37"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@19984802:1234006944421" type="Page Connector" width="95" x="-137" y="321">
+<page_connector target="Element@11657388:1234006502187">WaitLoop</page_connector>
+</element>
+<element height="46" id="Element@11346824:1234006944421" type="Page Connector" width="135" x="204" y="148">
+<page_connector target="Element@3616579:1234007011515">Ask if caller ready</page_connector>
+</element>
+<element height="46" id="Element@3981368:1234006944421" name="Update DB to INPROGRESS" src="com.cisco.cvp.vxml.custelem.callback.UpdateStatus" type="Decision Element" width="181" x="0" y="79">
+<exit_states>
+<exit_state name="done" target="Element@25852780:1234006944421"/>
+<exit_state name="error" target="Element@7319326:1234006944421"/>
+</exit_states>
+</element>
+<element height="46" id="Element@5366528:1234006944421" name="Do Callback" type="Page Entry" width="105" x="35" y="11">
+<exit_states>
+<exit_state name="next" target="Element@3981368:1234006944421"/>
+</exit_states>
+</element>
+<element height="46" id="Element@25852780:1234006944421" name="Reconnect Caller" src="com.cisco.cvp.vxml.custelem.callback.Reconnect" type="Voice Element" width="131" x="-6" y="150">
+<exit_states>
+<exit_state name="connected" target="Element@11346824:1234006944421"/>
+<exit_state name="busy" target="Element@16247393:1234006944421">
+<bendpoint>
+<dim1 x="29" y="44"/>
+<dim2 x="31" y="-42"/>
+</bendpoint>
+</exit_state>
+<exit_state name="invalid_number" target="Element@16247393:1234006944421">
+<bendpoint>
+<dim1 x="108" y="43"/>
+<dim2 x="110" y="-43"/>
+</bendpoint>
+</exit_state>
+<exit_state name="noanswer" target="Element@16247393:1234006944421">
+<bendpoint>
+<dim1 x="-58" y="44"/>
+<dim2 x="-56" y="-42"/>
+</bendpoint>
+</exit_state>
+<exit_state name="error" target="Element@16247393:1234006944421"/>
+</exit_states>
+</element>
+<element height="46" id="Element@925548:1234006944421" name="Cancel or Retry" type="Decision" width="125" x="17" y="319">
+<exit_states>
+<exit_state name="cancel" target="Element@7319326:1234006944421">
+<bendpoint>
+<dim1 x="-94" y="-39"/>
+<dim2 x="135" y="195"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="-140" y="-72"/>
+<dim2 x="89" y="162"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="-171" y="-113"/>
+<dim2 x="58" y="121"/>
+</bendpoint>
+</exit_state>
+<exit_state name="retry" target="Element@19984802:1234006944421"/>
+</exit_states>
+</element>
+<element height="46" id="Element@7319326:1234006944421" name="Return to ICM Cancel" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="172" x="-236" y="85">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="13" id="Element@19943156:1255643113083" type="Comment" width="246" x="-41" y="411">
+<comment><![CDATA[CallbackWait Script provided with Cisco CVP.]]></comment>
+</element>
+</page>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision_element id="Element@19621311:1234007011500" name="Update DB to COMPLETED noresponse" version="6.0.1">
+<config>
+<settings>
+<setting name="status">COMPLETED</setting>
+<setting name="reason">noresponse</setting>
+</settings>
+</config>
+</decision_element>

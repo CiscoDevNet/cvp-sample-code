@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subdialog_start id="Element@5298117:1229802117953" name="CVP Subdialog Start_01" version="6.0.1">
+<config>
+<settings>
+<setting name="Parameter"/>
+<setting name="Where">Session Data</setting>
+<setting name="enable_digits_bypass">false</setting>
+</settings>
+</config>
+</subdialog_start>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@22516384:1253222097909" name="Max Bad Phone Count" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Max Bad Phone Count" default_exit_state="retry">
+        <exit_state name="max_tries" conjugate="and">
+            <number operator="greater_equal">
+                <data>
+                    <element name="Bad Phone Number Counter" variable="count" />
+                </data>
+                <constant_number value="3" />
+            </number>
+        </exit_state>
+        <exit_state name="prohibited_number" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="Add Callback to DB 1" variable="result" />
+                </data>
+                <constant_string value="prohibited_number" />
+            </string>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

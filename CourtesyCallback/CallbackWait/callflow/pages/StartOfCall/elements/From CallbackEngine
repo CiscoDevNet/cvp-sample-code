@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@15384756:1234201310197" name="From CallbackEngine" version="6.0.1">
+<config>
+<settings>
+<setting name="maintainer"/>
+<setting name="language"/>
+<setting name="encoding"/>
+<setting name="default_audio_path"/>
+<setting name="remove_session_data"/>
+</settings>
+<session_data>
+<data create_when="Before" name="callid">{Data.Session.CallbackEngine_callid}</data>
+<data create_when="Before" name="_ccbServlet">{Data.Session.CallbackEngine__ccbServlet}</data>
+<data create_when="Before" name="qtime">{Data.Session.CallbackEngine_qtime}</data>
+<data create_when="Before" name="queueapp">{Data.Session.CallbackEngine_queueapp}</data>
+<data create_when="Before" name="_userCourtesyCallbackEnabled">{Data.Session.CallbackEngine__userCourtesyCallbackEnabled}</data>
+<data create_when="Before" name="_ccbServletReqTimeout">{Data.Session.CallbackEngine__ccbServletReqTimeout}</data>
+<data create_when="Before" name="qname">{Data.Session.CallbackEngine_qname}</data>
+<data create_when="Before" name="CallbackType">{Data.Session.CallbackEngine_CallbackType}</data>
+</session_data>
+</config>
+</action_element>

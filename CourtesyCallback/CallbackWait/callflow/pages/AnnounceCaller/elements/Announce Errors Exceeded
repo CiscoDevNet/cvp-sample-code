@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@5029090:1255119339629" name="Announce Errors Exceeded" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Announce Errors Exceeded" default_exit_state="true">
+        <exit_state name="false" conjugate="and">
+            <number operator="less">
+                <data>
+                    <session name="AnnounceNoMatchCount" />
+                </data>
+                <constant_number value="3" />
+            </number>
+            <number operator="less">
+                <data>
+                    <session name="AnnounceNoInputCount" />
+                </data>
+                <constant_number value="3" />
+            </number>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

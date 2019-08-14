@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<callflow id="Callflow@9528826:1234006216359" version="6.0.1">
+<page closed="false" id="Page@10268338:1234006216359">StartOfCall</page>
+<page closed="false" id="Page@6004036:1234006502187">WaitLoop</page>
+<page closed="false" id="Page@20240385:1234006516328">DoCallback</page>
+<page closed="false" id="Page@7590159:1234006552515">AskIfCallerReady</page>
+<page closed="false" id="Page@8003100:1255118533076">AnnounceCaller</page>
+</callflow>

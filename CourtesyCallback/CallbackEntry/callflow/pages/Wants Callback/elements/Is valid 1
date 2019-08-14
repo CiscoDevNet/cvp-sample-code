@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@14678685:1228767410875" name="Is valid 1" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Is valid 1" default_exit_state="validated">
+        <exit_state name="not_validated" conjugate="or">
+            <string operator="equal">
+                <data>
+                    <element name="Add Callback to DB 1" variable="result" />
+                </data>
+                <constant_string value="no_validation" />
+            </string>
+        </exit_state>
+        <exit_state name="prohibited_number" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="Add Callback to DB 1" variable="result" />
+                </data>
+                <constant_string value="prohibited_number" />
+            </string>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

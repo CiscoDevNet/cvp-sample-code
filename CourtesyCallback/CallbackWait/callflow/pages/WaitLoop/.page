@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@6004036:1234006502187" name="WaitLoop" version="6.0.1">
+<element height="46" id="Element@11657388:1234006502187" name="WaitLoop" type="Page Entry" width="95" x="23" y="14">
+<exit_states>
+<exit_state name="next" target="Element@9986098:1234006738421"/>
+</exit_states>
+</element>
+<element height="46" id="Element@25452873:1234006738421" name="Long Wait" src="com.cisco.cvp.vxml.custelem.callback.Wait" type="Voice Element" width="145" x="325" y="333">
+<exit_states>
+<exit_state name="done" target="Element@9986098:1234006738421">
+<bendpoint>
+<dim1 x="-107" y="-56"/>
+<dim2 x="175" y="57"/>
+</bendpoint>
+</exit_state>
+<exit_state name="error" target="Element@9986098:1234006738421">
+<bendpoint>
+<dim1 x="-110" y="-78"/>
+<dim2 x="14" y="122"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@2356633:1234006738421" name="Is wait more than 3 mins" type="Decision" width="167" x="459" y="141">
+<exit_states>
+<exit_state name="no" target="Element@15636835:1234006738421"/>
+<exit_state name="yes" target="Element@25452873:1234006738421">
+<bendpoint>
+<dim1 x="93" y="155"/>
+<dim2 x="250" y="-34"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="28" y="210"/>
+<dim2 x="227" y="16"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="-52" y="205"/>
+<dim2 x="147" y="11"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@2012567:1234006738421" name="Is Callback Ready" type="Decision" width="157" x="221" y="131">
+<exit_states>
+<exit_state name="no" target="Element@2356633:1234006738421">
+<bendpoint>
+<dim1 x="73" y="35"/>
+<dim2 x="-22" y="-38"/>
+</bendpoint>
+</exit_state>
+<exit_state name="yes" target="Element@13703190:1234006738421"/>
+</exit_states>
+</element>
+<element height="46" id="Element@9986098:1234006738421" name="Get Status_01" src="com.cisco.cvp.vxml.custelem.callback.GetStatus" type="Decision Element" width="166" x="2" y="121">
+<exit_states>
+<exit_state name="done" target="Element@2012567:1234006738421">
+<bendpoint>
+<dim1 x="84" y="27"/>
+<dim2 x="-78" y="26"/>
+</bendpoint>
+</exit_state>
+<exit_state name="error" target="Element@29496629:1303219272364"/>
+</exit_states>
+</element>
+<element height="46" id="Element@13703190:1234006738421" type="Page Connector" width="105" x="447" y="240">
+<page_connector target="Element@5366528:1234006944421">Do Callback</page_connector>
+</element>
+<element height="46" id="Element@15636835:1234006738421" name="Short Wait" src="com.cisco.cvp.vxml.custelem.callback.Wait" type="Voice Element" width="148" x="265" y="22">
+<exit_states>
+<exit_state name="done" target="Element@9986098:1234006738421"/>
+<exit_state name="error" target="Element@9986098:1234006738421">
+<bendpoint>
+<dim1 x="-92" y="35"/>
+<dim2 x="152" y="-120"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@24157638:1234021547703" name="CVP Subdialog Return_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="172" x="31" y="568">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="13" id="Element@21770149:1255643082584" type="Comment" width="246" x="341" y="575">
+<comment><![CDATA[CallbackWait Script provided with Cisco CVP.]]></comment>
+</element>
+<element height="46" id="Element@29496629:1303219272364" name="Check Retry" type="Decision" width="139" x="14" y="458">
+<exit_states>
+<exit_state name="no" target="Element@158446:1303219706513"/>
+<exit_state name="yes" target="Element@24157638:1234021547703"/>
+</exit_states>
+</element>
+<element height="46" id="Element@158446:1303219706513" name="Retry Counter" src="com.audium.server.action.counter.CounterAction" type="Action Element" width="119" x="132" y="341">
+<exit_states>
+<exit_state name="done" target="Element@2012567:1234006738421"/>
+</exit_states>
+</element>
+</page>

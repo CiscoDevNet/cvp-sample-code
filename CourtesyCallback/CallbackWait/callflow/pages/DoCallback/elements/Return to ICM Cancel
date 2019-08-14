@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subdialog_return id="Element@7319326:1234006944421" name="Return to ICM Cancel" version="6.0.1">
+<config>
+<settings>
+<setting name="caller_input">false</setting>
+<setting name="FromExtVXML0">cancelcall</setting>
+<setting name="FromExtVXML1"/>
+<setting name="FromExtVXML2"/>
+<setting name="FromExtVXML3"/>
+</settings>
+</config>
+</subdialog_return>

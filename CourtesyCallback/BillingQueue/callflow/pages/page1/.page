@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@9649159:1222642562890" name="page1" version="6.0.1">
+<element height="46" id="Element@25149927:1222642562890" name="Start Of Call" start_of_call="true" type="Page Entry" width="109" x="158" y="22">
+<exit_states>
+<exit_state name="next" target="Element@15954272:1229268954843"/>
+</exit_states>
+</element>
+<element height="46" id="Element@29711977:1222642603875" name="Audio_01" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="95" x="163" y="218">
+<exit_states>
+<exit_state name="done" target="Element@7608442:1229269043031"/>
+</exit_states>
+</element>
+<element height="46" id="Element@15954272:1229268954843" name="CVP Subdialog Start_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogStartElement" type="Subdialog Start" width="163" x="129" y="122">
+<exit_states>
+<exit_state name="done" target="Element@29711977:1222642603875"/>
+</exit_states>
+</element>
+<element height="46" id="Element@7608442:1229269043031" name="CVP Subdialog Return_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="172" x="124" y="322">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="13" id="Element@3383952:1253026586593" type="Comment" width="297" x="53" y="377">
+<comment><![CDATA[This is the sample BillingQueue Script provided with Cisco CVP.]]></comment>
+</element>
+<element height="104" id="Element@15785139:1264630474719" type="Comment" width="154" x="15" y="24">
+<comment><![CDATA[IMPORTANT:
+Default Audio Path URI
+must be set in the 
+Project Properties
+to point at a media server 
+containing all 
+Courtesy Callback 
+audio files.]]></comment>
+</element>
+</page>

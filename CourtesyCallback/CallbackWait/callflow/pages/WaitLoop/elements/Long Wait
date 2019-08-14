@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@25452873:1234006738421" name="Long Wait" version="6.0.1">
+<config>
+<settings>
+<setting name="secs">60</setting>
+</settings>
+</config>
+</voice_element>

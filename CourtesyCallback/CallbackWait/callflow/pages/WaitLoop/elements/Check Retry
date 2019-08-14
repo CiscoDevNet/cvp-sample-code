@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@29496629:1303219272364" name="Check Retry" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Check Retry" default_exit_state="no">
+        <exit_state name="yes" conjugate="and">
+            <number operator="greater_equal">
+                <data>
+                    <element name="Retry Counter" variable="count" />
+                </data>
+                <constant_number value="6" />
+            </number>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

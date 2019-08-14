@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@15941165:1228078653953" name="PreemptivePrompt1" version="6.0.1">
+<config>
+<audio>
+<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri="CCWaitTimePart1.wav"/>
+</audio_item_config>
+</audio_item>
+<audio_item name="audio item 2" type="say_it_smart">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<say_it_smart input_format="standard" output_format="no_trailing_0s" type="number">{Data.Element.ewt in Minutes.ewt_minutes}</say_it_smart>
+<recorded_audio default_audio_path="true" fileset="enhanced" type="wav">../sys</recorded_audio>
+</audio_item_config>
+</audio_item>
+<audio_item name="audio item 3" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri="CCWaitTimePart2.wav"/>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+</config>
+</voice_element>

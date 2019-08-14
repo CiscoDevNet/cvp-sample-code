@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision_element id="Element@3981368:1234006944421" name="Update DB to INPROGRESS" version="6.0.1">
+<config>
+<settings>
+<setting name="status">INPROGRESS</setting>
+</settings>
+</config>
+</decision_element>

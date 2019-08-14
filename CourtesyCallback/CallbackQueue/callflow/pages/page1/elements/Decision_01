@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@31412387:1257539037907" name="Decision_01" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Decision_01" default_exit_state="done">
+        <exit_state name="callbackError" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <session name="ccError" />
+                </data>
+                <constant_string value="true" />
+            </string>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

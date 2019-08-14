@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@2012567:1234006738421" name="Is Callback Ready" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Is Callback Ready" default_exit_state="no">
+        <exit_state name="yes" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="Get Status_01" variable="startCallback" />
+                </data>
+                <constant_string value="true" />
+            </string>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>
