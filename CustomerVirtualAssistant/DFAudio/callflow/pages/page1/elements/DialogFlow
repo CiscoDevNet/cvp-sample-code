@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@1161220051:1560735241163" name="DialogFlow" version="6.0.1">
+<config>
+<settings>
+<setting name="project_id">ciscoss-dev-9gkv</setting>
+<setting name="language">en-in</setting>
+<setting name="output_as_audio">true</setting>
+<setting name="noinput_timeout">5s</setting>
+<setting name="max_noinput_count">3</setting>
+<setting name="term_char">#</setting>
+<setting name="initial_audio">Hello</setting>
+<setting name="max_input">30s</setting>
+<setting name="final_silence">2s</setting>
+<setting name="secure_logging">false</setting>
+</settings>
+</config>
+</voice_element>

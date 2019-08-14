@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<voice_element id="Element@27472100:1276195329664" name="Record Greeting With Confirm" version="6.0.1">
+<config>
+<settings>
+<setting name="inputmode">both</setting>
+<setting name="noinput_timeout">3s</setting>
+<setting name="record_max_noinput_count">1</setting>
+<setting name="confirm_max_noinput_count">1</setting>
+<setting name="confirm_max_nomatch_count">1</setting>
+<setting name="max_disconfirmed_count">3</setting>
+<setting name="confirm_confidence_level">0.50</setting>
+<setting name="start_with_beep">true</setting>
+<setting name="terminate_on_dtmf">true</setting>
+<setting name="keep_recording_on_hangup">false</setting>
+<setting name="max_record_time">60</setting>
+<setting name="final_silence">3s</setting>
+<setting name="replay">false</setting>
+<setting name="filename">{Data.Session.greetingFilename}</setting>
+<setting name="file_type">wav</setting>
+<setting name="extension"></setting>
+<setting name="path">..\webapps\CVP\audio\</setting>
+<setting name="ftp_host"></setting>
+<setting name="ftp_user"></setting>
+<setting name="ftp_password"></setting>
+<setting name="ftp_path"></setting>
+<setting name="ftp_in_background">false</setting>
+</settings>
+<audio>
+<audio_group barge_in="true" count="1" name="record_initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes></audio_item_notes>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri="record_greeting.wav"><![CDATA[You may record your greeting after the beep.]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+<audio_group barge_in="true" count="1" name="before_confirm_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes></audio_item_notes>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri="this_is_your_recording.wav"><![CDATA[This is what you recorded.]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+<audio_group barge_in="true" count="1" name="after_confirm_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes></audio_item_notes>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri="greeting_confirm.wav"><![CDATA[Press 1 to confirm this greeting, press 2 to record it again.]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+</config>
+</voice_element>

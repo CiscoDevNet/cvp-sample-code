@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<voice_element id="Element@10467510:1276268763589" name="max disconfirmed" version="6.0.1">
+<config>
+<vxml_properties>
+<data name="{Data.Session.status}">5</data>
+</vxml_properties>
+<audio>
+<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes></audio_item_notes>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri="recording_error.wav"><![CDATA[Max disconfirmed was reached.]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+<session_data>
+<data create_when="After" name="status">1</data>
+</session_data>
+</config>
+</voice_element>

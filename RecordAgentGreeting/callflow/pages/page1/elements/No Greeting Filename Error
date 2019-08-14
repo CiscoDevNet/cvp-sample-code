@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<voice_element id="Element@29999436:1276199330458" name="No Greeting Filename Error" version="6.0.1">
+<config>
+<audio>
+<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes></audio_item_notes>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri="no_greeting_filename.wav"><![CDATA[A greeting filename was not provided.]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+<session_data>
+<data create_when="After" name="status">1</data>
+</session_data>
+</config>
+</voice_element>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page id="Page@13167130:1276190897318" name="page1" version="6.0.1">
+<element height="46" id="Element@1342401:1276190897318" name="Start Of Call" start_of_call="true" type="Page Entry" width="109" x="53" y="14">
+<exit_states>
+<exit_state name="next" target="Element@30658092:1276190932080"/>
+</exit_states>
+</element>
+<element height="46" id="Element@30658092:1276190932080" name="CVP Subdialog Start_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogStartElement" type="Subdialog Start" width="163" x="242" y="11">
+<exit_states>
+<exit_state name="done" target="Element@25903578:1276190932080"/>
+</exit_states>
+</element>
+<element height="46" id="Element@25903578:1276190932080" name="Check Required Information" type="Decision" width="184" x="26" y="161">
+<exit_states>
+<exit_state name="no ftp server" target="Element@12603329:1276199332511"/>
+<exit_state name="done" target="Element@27472100:1276195329664"/>
+<exit_state name="no greeting filename" target="Element@29999436:1276199330458"/>
+</exit_states>
+</element>
+<element height="46" id="Element@32998721:1276190932080" name="CVP Subdialog Return_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="172" x="573" y="405">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="46" id="Element@8614673:1276190932080" name="Say Greeting is Saved" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="155" x="543" y="682">
+<exit_states>
+<exit_state name="done" target="Element@32998721:1276190932080"/>
+</exit_states>
+</element>
+<element height="46" id="Element@27472100:1276195329664" name="Record Greeting With Confirm" src="com.audium.server.voiceElement.record.MRecordWithConfirm" type="Voice Element" width="193" x="31" y="481">
+<exit_states>
+<exit_state name="done" target="Element@23743215:1276694795198">
+<bendpoint>
+<dim1 x="-74" y="211"/>
+<dim2 x="-125" y="-217"/>
+</bendpoint>
+</exit_state>
+<exit_state name="max_nomatch" target="Element@15182069:1276268857119">
+<bendpoint>
+<dim1 x="88" y="127"/>
+<dim2 x="-129" y="-36"/>
+</bendpoint>
+</exit_state>
+<exit_state name="max_noinput" target="Element@28419691:1276267722361">
+<bendpoint>
+<dim1 x="81" y="105"/>
+<dim2 x="-148" y="14"/>
+</bendpoint>
+</exit_state>
+<exit_state name="max_disconfirmed" target="Element@10467510:1276268763589">
+<bendpoint>
+<dim1 x="-3" y="246"/>
+<dim2 x="-119" y="-74"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@29999436:1276199330458" name="No Greeting Filename Error" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="219" x="516" y="99">
+<exit_states>
+<exit_state name="done" target="Element@32998721:1276190932080"/>
+</exit_states>
+</element>
+<element height="46" id="Element@12603329:1276199332511" name="No FTP Servers Error" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="219" x="331" y="234">
+<exit_states>
+<exit_state name="done" target="Element@32998721:1276190932080"/>
+</exit_states>
+</element>
+<element height="46" id="Element@12568784:1276262702495" name="FTP Deployment Error" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="219" x="643" y="795">
+<exit_states>
+<exit_state name="done" target="Element@32998721:1276190932080">
+<bendpoint>
+<dim1 x="74" y="-104"/>
+<dim2 x="78" y="128"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@28419691:1276267722361" name="max no input" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="219" x="200" y="680">
+<exit_states>
+<exit_state name="done" target="Element@32998721:1276190932080"/>
+</exit_states>
+</element>
+<element height="46" id="Element@10467510:1276268763589" name="max disconfirmed" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="219" x="162" y="793">
+<exit_states>
+<exit_state name="done" target="Element@32998721:1276190932080"/>
+</exit_states>
+</element>
+<element height="46" id="Element@15182069:1276268857119" name="max no match" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="219" x="258" y="579">
+<exit_states>
+<exit_state name="done" target="Element@32998721:1276190932080"/>
+</exit_states>
+</element>
+<element height="46" id="Element@23743215:1276694795198" name="Play Background Music" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="219" x="39" y="904">
+<exit_states>
+<exit_state name="done" target="Element@1519302:1276711518997"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1519302:1276711518997" name="FTP to Media Servers" src="com.cisco.cvp.vxml.custelem.FTP" type="Decision Element" width="152" x="325" y="954">
+<exit_states>
+<exit_state name="done" target="Element@8614673:1276190932080"/>
+<exit_state name="partial_success" target="Element@12568784:1276262702495">
+<bendpoint>
+<dim1 x="223" y="13"/>
+<dim2 x="-72" y="74"/>
+</bendpoint>
+</exit_state>
+<exit_state name="error" target="Element@12568784:1276262702495">
+<bendpoint>
+<dim1 x="141" y="-64"/>
+<dim2 x="-154" y="-3"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@12255831:1278941501984" name="Your Current Greeting" skipped="true" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="219" x="194" y="325">
+<exit_states>
+<exit_state name="done" target="Element@27472100:1276195329664"/>
+</exit_states>
+</element>
+</page>

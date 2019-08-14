@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<voice_element id="Element@23743215:1276694795198" name="Play Background Music" version="6.0.1">
+<config>
+<vxml_properties>
+<data name="fetchtimeout">30s</data>
+<data name="fetchaudio">/CVP/audio/music.wav</data>
+<data name="fetchaudiodelay">2s</data>
+<data name="fetchaudiominimum">5s</data>
+</vxml_properties>
+<audio>
+<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes></audio_item_notes>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri="silence.wav"></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+</config>
+</voice_element>

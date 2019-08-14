@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@521872432:1560735212291" name="page1" version="6.0.1">
+<element height="46" id="Element@970179665:1560735212291" name="Start Of Call" start_of_call="true" type="Page Entry" width="113" x="330" y="65">
+<exit_states>
+<exit_state name="next" target="Element@556191663:1560735225353"/>
+</exit_states>
+</element>
+<element height="46" id="Element@556191663:1560735225353" name="CVP Subdialog Start_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogStartElement" type="Subdialog Start" width="172" x="304" y="157">
+<exit_states>
+<exit_state name="done" target="Element@1161220051:1560735241163"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1161220051:1560735241163" name="DialogFlow" src="com.audium.server.voiceElement.dialogFlow.MDialogFlow" type="Voice Element" width="126" x="329" y="278">
+<exit_states>
+<exit_state name="done" target="Element@975206494:1560821054866"/>
+<exit_state name="max_noinput" target="Element@739124423:1560828979431">
+<bendpoint>
+<dim1 x="-258" y="78"/>
+<dim2 x="-1" y="-91"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@975206494:1560821054866" name="CheckIntent" type="Decision" width="114" x="336" y="414">
+<exit_states>
+<exit_state name="AgentTransfer" target="Element@2085277157:1560823008693">
+<bendpoint>
+<dim1 x="-55" y="60"/>
+<dim2 x="-56" y="-45"/>
+</bendpoint>
+</exit_state>
+<exit_state name="Exit" target="Element@2085277157:1560823008693">
+<bendpoint>
+<dim1 x="63" y="61"/>
+<dim2 x="62" y="-44"/>
+</bendpoint>
+</exit_state>
+<exit_state name="Loop" target="Element@1161220051:1560735241163">
+<bendpoint>
+<dim1 x="-153" y="-3"/>
+<dim2 x="-153" y="133"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="-152" y="-134"/>
+<dim2 x="-152" y="2"/>
+</bendpoint>
+</exit_state>
+<exit_state name="Incomplete" target="Element@42021577:1560825758243">
+<bendpoint>
+<dim1 x="233" y="-1"/>
+<dim2 x="0" y="82"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@2085277157:1560823008693" name="CVP Subdialog Return_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="183" x="300" y="557">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="46" id="Element@42021577:1560825758243" name="StoreIntent" src="com.audium.server.action.setvalue.SetValueAction" type="Action Element" width="114" x="568" y="331">
+<exit_states>
+<exit_state name="done" target="Element@1161220051:1560735241163">
+<bendpoint>
+<dim1 x="-4" y="-53"/>
+<dim2 x="229" y="0"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@739124423:1560828979431" name="NoInputMessage" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="140" x="68" y="449">
+<exit_states>
+<exit_state name="done" target="Element@2085277157:1560823008693"/>
+</exit_states>
+</element>
+<element height="30" id="Element@1507521365:1560876760489" type="Comment" width="264" x="514" y="268">
+<comment><![CDATA[Store the last intent which is incomplete.
+This could be passed to ICM for routing decisions.]]></comment>
+</element>
+<element height="30" id="Element@215672733:1560877007398" type="Comment" width="160" x="448" y="455">
+<comment><![CDATA[Break the loop based on 
+AgentTransfer and Exit intents.]]></comment>
+</element>
+</page>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@1363694467:1564000897426" name="CheckBalance" version="6.0.1">
+<element height="46" id="Element@1561088593:1564000897426" name="CheckBalance" type="Page Entry" width="124" x="354" y="29">
+<exit_states>
+<exit_state name="next" target="Element@502363157:1564548378496"/>
+</exit_states>
+</element>
+<element height="46" id="Element@387995891:1564007136024" name="SavingsBalance" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="131" x="230" y="368">
+<exit_states>
+<exit_state name="done" target="Element@1721102281:1564007268487"/>
+</exit_states>
+</element>
+<element height="46" id="Element@2006430857:1564007150977" name="NoInput" type="Page Connector" width="94" x="596" y="214">
+<page_connector target="Element@1674738101:1564000864466">NoInput<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@1850231545:1564007150977" name="IntentChange" type="Page Connector" width="122" x="584" y="72">
+<page_connector target="Element@757687320:1564000754709">IntentChange<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@1721102281:1564007268487" name="DFRootConnector" type="Page Connector" width="145" x="369" y="477">
+<page_connector target="Element@445269550:1564007244081">DFRootConnector<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@648078327:1564070081436" name="Decision_02" type="Decision" width="112" x="365" y="256">
+<exit_states>
+<exit_state name="Savings" target="Element@387995891:1564007136024"/>
+<exit_state name="Current" target="Element@1077365180:1564070104886"/>
+<exit_state name="Others" target="Element@1850231545:1564007150977"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1077365180:1564070104886" name="CurrentBalance" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="131" x="518" y="372">
+<exit_states>
+<exit_state name="done" target="Element@1721102281:1564007268487"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1402953791:1564124629181" name="Copy_of_SavingsBalance" skipped="true" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="180" x="88" y="211">
+<exit_states>
+<exit_state name="done" target="Element@648078327:1564070081436"/>
+</exit_states>
+</element>
+<element height="51" id="Element@502363157:1564548378496" name="AccountType" src="com.audium.server.voiceElement.dialogFlow.MDialogFlowParam" type="Voice Element" width="120" x="358" y="147">
+<exit_states>
+<exit_state name="done" target="Element@648078327:1564070081436"/>
+<exit_state name="intent_change" target="Element@1850231545:1564007150977"/>
+<exit_state name="max_noinput" target="Element@2006430857:1564007150977"/>
+<exit_state name="max_nomatch" target="Element@2006430857:1564007150977"/>
+</exit_states>
+</element>
+</page>

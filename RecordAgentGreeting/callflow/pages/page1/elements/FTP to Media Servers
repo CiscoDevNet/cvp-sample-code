@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decision_element id="Element@1519302:1276711518997" name="FTP to Media Servers" version="6.0.1">
+<config>
+<settings>
+<setting name="filename">{Data.Element.Record Greeting With Confirm.filepath}</setting>
+<setting name="remote_filename"></setting>
+<setting name="ftp_hosts">{Data.Session.ftpServer}</setting>
+<setting name="ftp_user">anonymous</setting>
+<setting name="ftp_password"></setting>
+<setting name="ftp_path">{Data.Session.ftpPath}</setting>
+<setting name="delete_file_on_success">true</setting>
+</settings>
+</config>
+</decision_element>

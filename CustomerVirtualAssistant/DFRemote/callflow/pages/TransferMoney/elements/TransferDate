@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@420641420:1564548670057" name="TransferDate" version="6.0.1">
+<config>
+<settings>
+<setting name="inputmode">voice</setting>
+<setting name="language">en-in</setting>
+<setting name="noinput_timeout">5s</setting>
+<setting name="max_noinput_count">3</setting>
+<setting name="max_nomatch_count">3</setting>
+<setting name="term_char">#</setting>
+<setting name="max_input">30s</setting>
+<setting name="final_silence">2s</setting>
+<setting name="Intent">TransferMoney</setting>
+<setting name="variable">date</setting>
+<setting name="last_node">false</setting>
+<setting name="secure_logging">false</setting>
+</settings>
+<audio>
+<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[When do you want to  transfer ?]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+</config>
+</voice_element>

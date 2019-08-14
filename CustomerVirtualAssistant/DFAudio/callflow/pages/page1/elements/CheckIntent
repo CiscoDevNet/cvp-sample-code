@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@975206494:1560821054866" name="CheckIntent" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Decision_01" default_exit_state="Loop">
+        <exit_state name="AgentTransfer" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="DialogFlow" variable="intent" />
+                </data>
+                <constant_string value="agenttransfer" />
+            </string>
+        </exit_state>
+        <exit_state name="Exit" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="DialogFlow" variable="intent" />
+                </data>
+                <constant_string value="exit" />
+            </string>
+        </exit_state>
+        <exit_state name="Incomplete" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="DialogFlow" variable="is_complete" />
+                </data>
+                <constant_string value="false" />
+            </string>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

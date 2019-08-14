@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<callflow id="Callflow@2016286698:1564000668542" version="6.0.1">
+<page closed="false" id="Page@681340324:1564000668542">BankingRoot</page>
+<page closed="false" id="Page@1363694467:1564000897426">CheckBalance</page>
+<page closed="false" id="Page@457009334:1564001298126">TransferMoney</page>
+</callflow>

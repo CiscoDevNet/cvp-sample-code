@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@1417620904:1564001015036" name="Decision_01" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Decision_01" default_exit_state="None">
+        <exit_state name="TransferMoney" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="DFIntent" variable="intent" />
+                </data>
+                <constant_string value="TransferMoney" />
+            </string>
+        </exit_state>
+        <exit_state name="CheckBalance" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="DFIntent" variable="intent" />
+                </data>
+                <constant_string value="CheckBalance" />
+            </string>
+        </exit_state>
+        <exit_state name="TransferMoney" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="DFIntent" variable="value" />
+                </data>
+                <constant_string value="1" />
+            </string>
+        </exit_state>
+        <exit_state name="CheckBalance" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="DFIntent" variable="value" />
+                </data>
+                <constant_string value="2" />
+            </string>
+        </exit_state>
+        <exit_state name="AgentTransfer" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="DFIntent" variable="intent" />
+                </data>
+                <constant_string value="AgentTransfer" />
+            </string>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

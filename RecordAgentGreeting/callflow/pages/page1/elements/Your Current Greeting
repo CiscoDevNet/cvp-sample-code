@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<voice_element id="Element@12255831:1278941501984" name="Your Current Greeting" version="6.0.1">
+<config>
+<audio>
+<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes></audio_item_notes>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri="your_current_greeting.wav"><![CDATA[This is your current greeting.]]></static>
+</audio_item_config>
+</audio_item>
+<audio_item name="audio item 2" type="static">
+<audio_item_notes></audio_item_notes>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri="{Data.Session.greetingFilename}.wav"></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+<session_data>
+<data create_when="After" name="status">4</data>
+</session_data>
+</config>
+</voice_element>

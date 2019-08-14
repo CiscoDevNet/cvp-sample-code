@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decision id="Element@25903578:1276190932080" name="Check Required Information" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Check Required Information" default_exit_state="done">
+        <exit_state name="no ftp server" conjugate="and">
+            <boolean check_existence="yes" value="false">
+                <data>
+                    <session name="ftpServer" />
+                </data>
+            </boolean>
+        </exit_state>
+        <exit_state name="no greeting filename" conjugate="and">
+            <boolean check_existence="yes" value="false">
+                <data>
+                    <session name="greetingFilename" />
+                </data>
+            </boolean>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

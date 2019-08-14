@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project_settings version="6.0.1">
+<general_settings>
+<deploy_version>10.5</deploy_version>
+<maintainer/>
+<language/>
+<encoding/>
+<subdialog>false</subdialog>
+<session_timeout>30</session_timeout>
+<gateway>cisco_dtmf_01</gateway>
+<loggers>
+<logger class="com.audium.logger.application.error.ApplicationErrorLogger" enforce_call_event_order="false" name="ErrorLog">
+<config_file name="ErrorLogConfig.xml"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration SYSTEM "../../../../dtds/ApplicationErrorLoggerConfig.dtd">
+<configuration version="1.0" name="ErrorLog">
+<format delimiter="," remove_delimiter_from_content="true" date_format="standard" date_granularity="milliseconds" print_stack_traces="true"/>
+<purge>
+<file_count greater_than="100"/>
+</purge>
+</configuration>]]></config_file>
+</logger>
+<logger class="com.audium.logger.application.admin.ApplicationAdminLogger" enforce_call_event_order="false" name="AdminLog"/>
+<logger class="com.audium.logger.application.activity.ActivityLogger" enforce_call_event_order="true" name="ActivityLog">
+<config_file name="ActivityLogConfig.xml"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration SYSTEM "../../../../dtds/ActivityLoggerConfig.dtd">
+<configuration version="1.0" name="ActivityLog">
+<format delimiter="," remove_delimiter_from_content="true" date_format="standard" date_granularity="milliseconds"/>
+<scope logging_level="Complete">
+<definitions>
+<level name="Complete">
+<event id="start"/>
+<event id="end"/>
+<event id="elementEnter"/>
+<event id="elementExit"/>
+<event id="elementFlag"/>
+<event id="defaultInteraction"/>
+<event id="elementData"/>
+<event id="custom"/>
+<event id="hotlink"/>
+<event id="hotevent"/>
+<event id="warning"/>
+<event id="systemError"/>
+<event id="javaApiError"/>
+<event id="xmlApiError"/>
+<event id="vxmlError"/>
+<event id="catch"/>
+</level>
+</definitions>
+</scope>
+<rotation>
+<by_size mb_limit="100"/>
+</rotation>
+<cache>
+<per_call kb_limit="50" allocate="once"/>
+</cache>
+<purge>
+<file_count greater_than="100"/>
+</purge>
+<last_modified_update frequency="1"/>
+</configuration>]]></config_file>
+</logger>
+<logger class="com.cisco.cvp.vxml.datafeed.DatafeedLogger" enforce_call_event_order="true" name="CVPDatafeedLog">
+<config_file name="CVPDatafeedLoggerConfig.properties"><![CDATA[debug=false
+#Logger Events
+LoggerEvent.1=start
+LoggerEvent.2=end
+LoggerEvent.3=elementEnter
+LoggerEvent.4=elementExit
+LoggerEvent.5=elementData
+LoggerEvent.6=elementFlag
+LoggerEvent.7=defaultInteraction
+LoggerEvent.8=hotlink
+LoggerEvent.9=hotevent
+LoggerEvent.10=warning
+LoggerEvent.11=custom
+LoggerEvent.12=systemError
+LoggerEvent.13=javaApiError
+LoggerEvent.14=vxmlError
+LoggerEvent.15=xmlApiError
+#Element type definitions]]></config_file>
+</logger>
+<logger class="com.cisco.cvp.vxml.snmp.CVPSNMPLogger" enforce_call_event_order="true" name="CVPSNMPLog">
+<config_file name="CVPSNMPLoggerConfig.properties"><![CDATA[debug=false
+#Logger Events
+LoggerEvent.1=appAdminError
+LoggerEvent.2=javaApiError
+LoggerEvent.3=systemError
+LoggerEvent.4=vxmlError
+LoggerEvent.5=warning
+LoggerEvent.6=xmlApiError]]></config_file>
+</logger>
+</loggers>
+</general_settings>
+<audio_settings>
+<error_message uri="/CVP/audio/error.wav"><![CDATA[Sorry. There has been an error.]]></error_message>
+<suspended_message uri="/CVP/audio/suspend_audio.wav"><![CDATA[Sorry, this voice application has been taken down for maintenance.]]></suspended_message>
+<initial_on_hold>/CVP/audio/onhold_initial.wav</initial_on_hold>
+<main_on_hold>/CVP/audio/onhold_continue.wav</main_on_hold>
+<default_audio_path/>
+</audio_settings>
+<endpoint_settings/>
+<root_doc_settings/>
+</project_settings>

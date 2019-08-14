@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@521872432:1560735212291" name="page1" version="6.0.1">
+<element height="46" id="Element@970179665:1560735212291" name="Start Of Call" start_of_call="true" type="Page Entry" width="113" x="425" y="32">
+<exit_states>
+<exit_state name="next" target="Element@556191663:1560735225353"/>
+</exit_states>
+</element>
+<element height="46" id="Element@556191663:1560735225353" name="StartSubdialog" src="com.audium.server.voiceElement.internal.CiscoSubdialogStartElement" type="Subdialog Start" width="172" x="392" y="130">
+<exit_states>
+<exit_state name="done" target="Element@1536550976:1560735257467"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1161220051:1560735241163" name="DialogFlow_01" src="com.audium.server.voiceElement.dialogFlow.MDialogFlow" type="Voice Element" width="126" x="416" y="334">
+<exit_states>
+<exit_state name="done" target="Element@2000599917:1560831385181"/>
+<exit_state name="max_noinput" target="Element@739124423:1560828979431">
+<bendpoint>
+<dim1 x="-173" y="5"/>
+<dim2 x="84" y="-164"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="-255" y="5"/>
+<dim2 x="2" y="-164"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="-256" y="96"/>
+<dim2 x="1" y="-73"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@1536550976:1560735257467" name="Welcome" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="100" x="429" y="234">
+<exit_states>
+<exit_state name="done" target="Element@1161220051:1560735241163"/>
+</exit_states>
+</element>
+<element height="46" id="Element@975206494:1560821054866" name="CheckIntent" type="Decision" width="114" x="420" y="567">
+<exit_states>
+<exit_state name="AgentTransfer" target="Element@2085277157:1560823008693">
+<bendpoint>
+<dim1 x="-45" y="86"/>
+<dim2 x="-47" y="-81"/>
+</bendpoint>
+</exit_state>
+<exit_state name="Exit" target="Element@2085277157:1560823008693">
+<bendpoint>
+<dim1 x="68" y="85"/>
+<dim2 x="66" y="-82"/>
+</bendpoint>
+</exit_state>
+<exit_state name="Loop" target="Element@1161220051:1560735241163">
+<bendpoint>
+<dim1 x="-153" y="-3"/>
+<dim2 x="-153" y="133"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="-152" y="-134"/>
+<dim2 x="-152" y="2"/>
+</bendpoint>
+</exit_state>
+<exit_state name="Complete" target="Element@42021577:1560825758243">
+<bendpoint>
+<dim1 x="260" y="-2"/>
+<dim2 x="0" y="109"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@2085277157:1560823008693" name="ReturnToCallServerWithIntent" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="206" x="387" y="734">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="46" id="Element@42021577:1560825758243" name="StoreIntent" src="com.audium.server.action.setvalue.SetValueAction" type="Action Element" width="114" x="683" y="456">
+<exit_states>
+<exit_state name="done" target="Element@1161220051:1560735241163">
+<bendpoint>
+<dim1 x="6" y="-122"/>
+<dim2 x="263" y="0"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@739124423:1560828979431" name="NoInputMessage" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="140" x="165" y="503">
+<exit_states>
+<exit_state name="done" target="Element@2085277157:1560823008693"/>
+</exit_states>
+</element>
+<element height="46" id="Element@2000599917:1560831385181" name="PlayFulfilment" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="149" x="404" y="463">
+<exit_states>
+<exit_state name="done" target="Element@975206494:1560821054866"/>
+</exit_states>
+</element>
+<element height="30" id="Element@674175185:1560877289902" type="Comment" width="264" x="750" y="504">
+<comment><![CDATA[Store the last intent which is incomplete.
+This could be passed to ICM for routing decisions.]]></comment>
+</element>
+<element height="60" id="Element@1905753520:1560877303183" type="Comment" width="216" x="496" y="390">
+<comment><![CDATA[Play the fulfilment text received 
+back from DialogFlow, if there is
+no fulfilment text returned by dialogFlow
+provide your own.]]></comment>
+</element>
+<element height="30" id="Element@1094724891:1560877417672" type="Comment" width="160" x="551" y="551">
+<comment><![CDATA[Break the loop based on 
+AgentTransfer and Exit intents.]]></comment>
+</element>
+<element height="45" id="Element@855749855:1560877472447" type="Comment" width="236" x="549" y="641">
+<comment><![CDATA[Create custom ExitState in Decision editor
+ to do local fulfilment for other intents and 
+send the control back to dialogflow element.]]></comment>
+</element>
+<element height="15" id="Element@458447885:1565768621317" type="Comment" width="350" x="297" y="785">
+<comment><![CDATA[Pass the intent to ICM so that the call can be routed to right agent.]]></comment>
+</element>
+</page>
