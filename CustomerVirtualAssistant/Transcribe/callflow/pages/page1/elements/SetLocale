@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@2024696624:1566200587216" name="SetLocale" version="6.0.1">
+<config>
+<settings>
+<setting name="locale">var lang = {Data.Element.GetLanguage.value};
+var locale = ""
+if(lang === "french") {
+    locale = "fr-FR";
+} else if(lang === "english") {
+    locale = "en-IN";
+}
+locale;</setting>
+</settings>
+</config>
+</action_element>

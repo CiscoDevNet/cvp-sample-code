@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@1377637372:1566106745715" name="Welcome" version="6.0.1">
+<config>
+<audio>
+<audio_group barge_in="false" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[Hello, Welcome to CVA feature]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+<audio language="fr-FR">
+<audio_group barge_in="false" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[Bonjour, bienvenue dans la fonction CVA]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+<audio language="ja-JP">
+<audio_group barge_in="false" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[こんにちは、どうすればお手伝いできますか]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+</config>
+</voice_element>

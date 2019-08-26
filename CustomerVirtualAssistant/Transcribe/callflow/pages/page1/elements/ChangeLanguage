@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@603276133:1566198861121" name="ChangeLanguage" version="6.0.1">
+<config>
+<settings>
+<setting name="maintainer"/>
+<setting name="language">{LocalVar.locale}</setting>
+<setting name="encoding"/>
+<setting name="default_audio_path"/>
+<setting name="remove_session_data"/>
+</settings>
+</config>
+</action_element>

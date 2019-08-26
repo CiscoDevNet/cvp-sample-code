@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@908444622:1566216963658" name="GetLanguage" version="6.0.1">
+<config>
+<settings>
+<setting name="project_id">test</setting>
+<setting name="inputmode">voice</setting>
+<setting name="language">en-us</setting>
+<setting name="noinput_timeout">5s</setting>
+<setting name="max_noinput_count">3</setting>
+<setting name="max_nomatch_count">3</setting>
+<setting name="confidence_level">0.40</setting>
+<setting name="term_char">#</setting>
+<setting name="max_input">30s</setting>
+<setting name="final_silence">2s</setting>
+<setting name="secure_logging">false</setting>
+</settings>
+<vxml_properties>
+<data name="com.cisco.voiceName">en-US-Wavenet-C</data>
+<data name="com.cisco.gender">FEMALE</data>
+</vxml_properties>
+<audio>
+<audio_group barge_in="false" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[Which language would you prefer? I support english and french.]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+<audio language="fr-FR">
+<audio_group barge_in="false" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[Que puis-je faire pour vous.]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+</config>
+</voice_element>
