@@ -22,7 +22,7 @@
 <exit_state name="done" target="Element@1914396242:1564549169461"/>
 </exit_states>
 </element>
-<element height="46" id="Element@1393081541:1564119632834" name="Decision_03" type="Decision" width="112" x="430" y="884">
+<element height="46" id="Element@1393081541:1564119632834" name="TransferMoneyConfirm" type="Decision" width="173" x="399" y="880">
 <exit_states>
 <exit_state name="No" target="Element@587539902:1564134232673"/>
 <exit_state name="Yes" target="Element@1356817940:1564134314411"/>
@@ -42,12 +42,12 @@
 <page_connector target="Element@1674738101:1564000864466">NoInput<config/>
 </page_connector>
 </element>
-<element height="46" id="Element@587539902:1564134232673" name="Audio_02" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="99" x="614" y="971">
+<element height="46" id="Element@587539902:1564134232673" name="TransferCancelled" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="144" x="614" y="971">
 <exit_states>
 <exit_state name="done" target="Element@1523086740:1564069017836"/>
 </exit_states>
 </element>
-<element height="46" id="Element@1356817940:1564134314411" name="Audio_03" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="99" x="282" y="967">
+<element height="46" id="Element@1356817940:1564134314411" name="TransferSuccessful" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="147" x="242" y="967">
 <exit_states>
 <exit_state name="done" target="Element@1523086740:1564069017836"/>
 </exit_states>

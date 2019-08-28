@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<subdialog_return id="Element@1269190160:1564006627762" name="CVP Subdialog Return_01" version="6.0.1">
+<subdialog_return id="Element@137691595:1564548354323" name="CVP Subdialog Return" version="6.0.1">
 <config>
 <settings>
 <setting name="caller_input">true</setting>

@@ -34,11 +34,6 @@
 <exit_state name="done" target="Element@1721102281:1564007268487"/>
 </exit_states>
 </element>
-<element height="46" id="Element@1402953791:1564124629181" name="Copy_of_SavingsBalance" skipped="true" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="180" x="88" y="211">
-<exit_states>
-<exit_state name="done" target="Element@648078327:1564070081436"/>
-</exit_states>
-</element>
 <element height="51" id="Element@502363157:1564548378496" name="AccountType" src="com.audium.server.voiceElement.dialogFlow.MDialogFlowParam" type="Voice Element" width="120" x="358" y="147">
 <exit_states>
 <exit_state name="done" target="Element@648078327:1564070081436"/>
@@ -46,5 +41,9 @@
 <exit_state name="max_noinput" target="Element@2006430857:1564007150977"/>
 <exit_state name="max_nomatch" target="Element@2006430857:1564007150977"/>
 </exit_states>
+</element>
+<element height="30" id="Element@1454975482:1566919235853" type="Comment" width="104" x="238" y="158">
+<comment><![CDATA[Can take input in
+ DTMF / Voice Both.]]></comment>
 </element>
 </page>

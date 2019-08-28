@@ -2,11 +2,12 @@
 <voice_element id="Element@772795415:1564548666869" name="TransferFromAccountType" version="6.0.1">
 <config>
 <settings>
-<setting name="inputmode">voice</setting>
+<setting name="inputmode">dtmf+voice</setting>
 <setting name="language">en-us</setting>
 <setting name="noinput_timeout">5s</setting>
 <setting name="max_noinput_count">3</setting>
 <setting name="max_nomatch_count">3</setting>
+<setting name="dtmf_grammar">\d</setting>
 <setting name="term_char">#</setting>
 <setting name="max_input">30s</setting>
 <setting name="final_silence">2s</setting>
@@ -16,11 +17,19 @@
 <setting name="secure_logging">false</setting>
 </settings>
 <audio>
-<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_group barge_in="false" count="1" name="initial_audio_group">
 <audio_item name="audio item 1" type="static">
 <audio_item_notes/>
 <audio_item_config view_id="default">
 <static default_audio_path="true" uri=""><![CDATA[From which account type you want to transfer ?]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+<audio_group barge_in="true" count="1" name="noinput_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[Which account balance you want press 1 for Savings Press 2 for Current Press 3 for Loan.]]></static>
 </audio_item_config>
 </audio_item>
 </audio_group>

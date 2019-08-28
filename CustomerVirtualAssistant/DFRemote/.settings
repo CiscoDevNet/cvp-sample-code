@@ -3,7 +3,7 @@
 <general_settings>
 <deploy_version>10.5</deploy_version>
 <maintainer/>
-<language/>
+<language>en-US</language>
 <encoding/>
 <subdialog>false</subdialog>
 <session_timeout>30</session_timeout>
@@ -99,5 +99,8 @@ LoggerEvent.6=xmlApiError]]></config_file>
 <default_audio_path/>
 </audio_settings>
 <endpoint_settings/>
-<root_doc_settings/>
+<root_doc_settings>
+<vxml_property name="com.cisco.voiceName">en-US-Wavenet-C</vxml_property>
+<vxml_property name="com.cisco.gender">FEMALE</vxml_property>
+</root_doc_settings>
 </project_settings>

@@ -17,7 +17,7 @@
 <setting name="secure_logging">false</setting>
 </settings>
 <audio>
-<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_group barge_in="false" count="1" name="initial_audio_group">
 <audio_item name="audio item 1" type="static">
 <audio_item_notes/>
 <audio_item_config view_id="default">
@@ -25,7 +25,7 @@
 </audio_item_config>
 </audio_item>
 </audio_group>
-<audio_group barge_in="true" count="1" name="noinput_audio_group">
+<audio_group barge_in="false" count="1" name="noinput_audio_group">
 <audio_item name="audio item 1" type="static">
 <audio_item_notes/>
 <audio_item_config view_id="default">
@@ -33,7 +33,7 @@
 </audio_item_config>
 </audio_item>
 </audio_group>
-<audio_group barge_in="true" count="1" name="nomatch_audio_group">
+<audio_group barge_in="false" count="1" name="nomatch_audio_group">
 <audio_item name="audio item 1" type="static">
 <audio_item_notes/>
 <audio_item_config view_id="default">

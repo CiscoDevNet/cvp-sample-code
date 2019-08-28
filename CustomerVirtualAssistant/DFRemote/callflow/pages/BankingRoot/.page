@@ -15,21 +15,21 @@
 <exit_state name="next" target="Element@1836976197:1564547968394"/>
 </exit_states>
 </element>
-<element height="46" id="Element@1674738101:1564000864466" name="NoInput" type="Page Entry" width="144" x="909" y="269">
+<element height="46" id="Element@1674738101:1564000864466" name="NoInput" type="Page Entry" width="144" x="905" y="267">
 <exit_states>
 <exit_state name="next" target="Element@969415785:1564000948482"/>
 </exit_states>
 </element>
-<element height="46" id="Element@969415785:1564000948482" name="Audio_01" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="99" x="931" y="378">
+<element height="46" id="Element@969415785:1564000948482" name="Audio_01" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="99" x="928" y="382">
 <exit_states>
-<exit_state name="done" target="Element@1269190160:1564006627762"/>
+<exit_state name="done" target="Element@137691595:1564548354323"/>
 </exit_states>
 </element>
 <element height="46" id="Element@1183888994:1564000971107" name="NoInput" type="Page Connector" width="94" x="627" y="280">
 <page_connector target="Element@1674738101:1564000864466">NoInput<config/>
 </page_connector>
 </element>
-<element height="46" id="Element@1417620904:1564001015036" name="Decision_01" type="Decision" width="112" x="408" y="346">
+<element height="46" id="Element@1417620904:1564001015036" name="CheckIntent" type="Decision" width="114" x="408" y="346">
 <exit_states>
 <exit_state name="TransferMoney" target="Element@220759734:1564001406333"/>
 <exit_state name="CheckBalance" target="Element@306905701:1564001410489"/>
@@ -49,11 +49,6 @@
 <element height="46" id="Element@306905701:1564001410489" name="CheckBalance" type="Page Connector" width="124" x="557" y="483">
 <page_connector target="Element@1561088593:1564000897426">CheckBalance<config/>
 </page_connector>
-</element>
-<element height="46" id="Element@1269190160:1564006627762" name="CVP Subdialog Return_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="183" x="892" y="484">
-<exit_states>
-<exit_state name="done"/>
-</exit_states>
 </element>
 <element height="46" id="Element@586321105:1564006831242" name="Set Variables" src="com.audium.server.action.setvalue.SetValueAction" type="Action Element" width="115" x="665" y="60">
 <exit_states>
@@ -82,7 +77,7 @@
 <exit_state name="max_nomatch" target="Element@1183888994:1564000971107"/>
 </exit_states>
 </element>
-<element height="46" id="Element@137691595:1564548354323" name="CVP Subdialog Return_02" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="183" x="629" y="383">
+<element height="46" id="Element@137691595:1564548354323" name="CVP Subdialog Return" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="183" x="770" y="485">
 <exit_states>
 <exit_state name="done"/>
 </exit_states>
