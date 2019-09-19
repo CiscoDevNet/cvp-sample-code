@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@1557843075:1568192467363" name="IsAnswerValid" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="IsAnswerValid" default_exit_state="false">
+        <exit_state name="true" conjugate="and">
+            <number operator="greater_equal">
+                <data>
+                    <element name="Set Value_01" variable="localNpsAns" />
+                </data>
+                <constant_number value="0" />
+            </number>
+            <number operator="less_equal">
+                <data>
+                    <element name="Set Value_01" variable="localNpsAns" />
+                </data>
+                <constant_number value="10" />
+            </number>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

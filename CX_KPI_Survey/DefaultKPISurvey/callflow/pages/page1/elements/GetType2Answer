@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@224840878:1568185774275" name="GetType2Answer" version="6.0.1">
+<config>
+<settings>
+<setting name="dummy">2</setting>
+</settings>
+<element_data>
+<data create_when="Before" name="type2Ans" storable="false" type="String">{Data.Element.ProcessSurveyType2.returnSurveyAnswer}</data>
+</element_data>
+</config>
+</action_element>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<decision id="Element@1871014311:1568183916995" name="Check Survey Type" version="6.0.1">
+<config>
+<source type="Decision Editor"><![CDATA[<knowledge_base>
+    <rule name="Check Survey Type" default_exit_state="false">
+        <exit_state name="NPS" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="ProcessSurvey" variable="surveyType" />
+                </data>
+                <constant_string value="3" />
+            </string>
+        </exit_state>
+        <exit_state name="CSAT" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="ProcessSurvey" variable="surveyType" />
+                </data>
+                <constant_string value="1" />
+            </string>
+        </exit_state>
+        <exit_state name="CES" conjugate="and">
+            <string operator="equal">
+                <data>
+                    <element name="ProcessSurvey" variable="surveyType" />
+                </data>
+                <constant_string value="2" />
+            </string>
+        </exit_state>
+    </rule>
+</knowledge_base>]]></source>
+</config>
+</decision>

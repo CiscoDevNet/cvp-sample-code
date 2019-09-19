@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<connector id="Element@1753165188:1568185195800" name="ProcessSurveyType2" version="6.0.1">
+<subflow_call subflow_name="ProcessSurvey" target="Element@31:1568796677061">
+<config>
+<argument_data>
+<data name="surveyType">{Data.Element.ExtractSurveyTypes.type2}</data>
+</argument_data>
+<input_data>
+<data name="returnSurveyAnswer"/>
+</input_data>
+</config>
+</subflow_call>
+</connector>
