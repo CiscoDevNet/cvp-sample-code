@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@1089648387:1564132102599" name="page1" version="6.0.1">
+<element height="50" id="Element@1176908505:1564132102599" name="Start Of Call" start_of_call="true" type="Page Entry" width="130" x="703" y="10">
+<exit_states>
+<exit_state name="next" target="Element@20364107:1564648461888"/>
+</exit_states>
+</element>
+<element height="50" id="Element@1457233709:1564137316873" name="Welcome" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="112" x="712" y="188">
+<exit_states>
+<exit_state name="done" target="Element@1946047993:1567069137821"/>
+</exit_states>
+</element>
+<element height="50" id="Element@782986127:1564137316873" name="Thanks" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="118" x="709" y="1036">
+<exit_states>
+<exit_state name="done" target="Element@200370202:1564648888211"/>
+</exit_states>
+</element>
+<element height="50" id="Element@20364107:1564648461888" name="ICM_CVP_Subdialog Start" src="com.audium.server.voiceElement.internal.CiscoSubdialogStartElement" type="Subdialog Start" width="217" x="660" y="99">
+<exit_states>
+<exit_state name="done" target="Element@1457233709:1564137316873"/>
+</exit_states>
+</element>
+<element height="50" id="Element@200370202:1564648888211" name="CVP Subdialog Return_01" src="com.audium.server.voiceElement.internal.CiscoSubdialogReturnElement" type="Subdialog Return" width="217" x="660" y="1140">
+<exit_states>
+<exit_state name="done"/>
+</exit_states>
+</element>
+<element height="50" id="Element@1946047993:1567069137821" name="ExtractSurveyTypes" src="com.audium.server.action.setvalue.SetValueAction" type="Action Element" width="175" x="682" y="288">
+<exit_states>
+<exit_state name="done" target="Element@1647021964:1568183742647"/>
+</exit_states>
+</element>
+<element height="50" id="Element@1647021964:1568183742647" name="ProcessSurveyType1" type="Subflow Call" width="181" x="678" y="407">
+<subflow_call subflow_name="ProcessSurvey" target="Element@31:1568796673859">
+<config>
+<argument_data>
+<data name="surveyType">{Data.Element.ExtractSurveyTypes.type1}</data>
+</argument_data>
+<input_data>
+<data name="returnSurveyAnswer"/>
+</input_data>
+</config>
+</subflow_call>
+<exit_states>
+<exit_state name="next" target="Element@1527393316:1568185703119"/>
+</exit_states>
+</element>
+<element height="50" id="Element@1753165188:1568185195800" name="ProcessSurveyType2" type="Subflow Call" width="241" x="648" y="619">
+<subflow_call subflow_name="ProcessSurvey" target="Element@31:1568796677061">
+<config>
+<argument_data>
+<data name="surveyType">{Data.Element.ExtractSurveyTypes.type2}</data>
+</argument_data>
+<input_data>
+<data name="returnSurveyAnswer"/>
+</input_data>
+</config>
+</subflow_call>
+<exit_states>
+<exit_state name="next" target="Element@224840878:1568185774275"/>
+</exit_states>
+</element>
+<element height="50" id="Element@1783945289:1568185197002" name="ProcessSurveyType3" type="Subflow Call" width="255" x="641" y="827">
+<subflow_call subflow_name="ProcessSurvey" target="Element@31:1568796679858">
+<config>
+<argument_data>
+<data name="surveyType">{Data.Element.ExtractSurveyTypes.type3}</data>
+</argument_data>
+<input_data>
+<data name="returnSurveyAnswer"/>
+</input_data>
+</config>
+</subflow_call>
+<exit_states>
+<exit_state name="next" target="Element@1610397354:1568185788886"/>
+</exit_states>
+</element>
+<element height="50" id="Element@1527393316:1568185703119" name="GetType1Answer" src="com.audium.server.action.setvalue.SetValueAction" type="Action Element" width="160" x="689" y="513">
+<exit_states>
+<exit_state name="done" target="Element@1753165188:1568185195800"/>
+</exit_states>
+</element>
+<element height="50" id="Element@224840878:1568185774275" name="GetType2Answer" src="com.audium.server.action.setvalue.SetValueAction" type="Action Element" width="193" x="672" y="719">
+<exit_states>
+<exit_state name="done" target="Element@1783945289:1568185197002"/>
+</exit_states>
+</element>
+<element height="50" id="Element@1610397354:1568185788886" name="GetType3Answer" src="com.audium.server.action.setvalue.SetValueAction" type="Action Element" width="207" x="665" y="939">
+<exit_states>
+<exit_state name="done" target="Element@782986127:1564137316873"/>
+</exit_states>
+</element>
+</page>

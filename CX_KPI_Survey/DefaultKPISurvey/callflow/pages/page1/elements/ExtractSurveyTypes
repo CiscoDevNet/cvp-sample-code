@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@1946047993:1567069137821" name="ExtractSurveyTypes" version="6.0.1">
+<config>
+<settings>
+<setting name="surveyType1">var surveyList = {Data.Session.surveyList};
+var arr = surveyList.split(':');
+var len = arr.length;
+var type1;
+
+if(len&gt;=1)
+	type1 = arr[0];
+else 
+	type1 = '';</setting>
+<setting name="surveyType2">var surveyList = {Data.Session.surveyList};
+var arr = surveyList.split(':');
+var len = arr.length;
+var type2;
+
+if(len&gt;=2)
+	type2 = arr[1];
+else 
+	type2 = '';</setting>
+<setting name="surveyType3">var surveyList = {Data.Session.surveyList};
+var arr = surveyList.split(':');
+var len = arr.length;
+var type3;
+
+if(len&gt;=3)
+	type3 = arr[2];
+else 
+	type3 = '';</setting>
+</settings>
+<element_data>
+<data create_when="After" name="type1" storable="true" type="String">{LocalVar.surveyType1}</data>
+<data create_when="After" name="type2" storable="true" type="String">{LocalVar.surveyType2}</data>
+<data create_when="After" name="type3" storable="true" type="String">{LocalVar.surveyType3}</data>
+<data create_when="Before" name="surveyList" storable="true" type="String">{Data.Session.surveyList}</data>
+</element_data>
+</config>
+</action_element>
