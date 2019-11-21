@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<voice_element id="Element@782986127:1564137316873" name="Thanks" version="6.0.1">
+<config>
+<audio>
+<audio_group barge_in="true" count="1" name="initial_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri="cx_kpi_bye.wav"/>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
+<session_data>
+<data create_when="Before" name="SurveyList">NPS:CSAT:CES</data>
+</session_data>
+</config>
+</voice_element>
