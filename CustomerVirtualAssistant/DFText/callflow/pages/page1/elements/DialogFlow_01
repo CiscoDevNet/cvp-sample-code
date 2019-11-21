@@ -3,7 +3,6 @@
 <config>
 <settings>
 <setting name="project_id">ciscoss-dev-9gkv</setting>
-<setting name="language">en-in</setting>
 <setting name="output_as_audio">false</setting>
 <setting name="noinput_timeout">5s</setting>
 <setting name="max_noinput_count">3</setting>
@@ -12,5 +11,15 @@
 <setting name="final_silence">2s</setting>
 <setting name="secure_logging">false</setting>
 </settings>
+<audio>
+<audio_group barge_in="true" count="1" name="noinput_audio_group">
+<audio_item name="audio item 1" type="static">
+<audio_item_notes/>
+<audio_item_config view_id="default">
+<static default_audio_path="true" uri=""><![CDATA[{Data.Element.DialogFlow_01.fulfillment_text}]]></static>
+</audio_item_config>
+</audio_item>
+</audio_group>
+</audio>
 </config>
 </voice_element>

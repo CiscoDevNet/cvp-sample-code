@@ -6,8 +6,8 @@
 <audio_item name="audio item 1" type="static">
 <audio_item_notes/>
 <audio_item_config view_id="default">
-<static default_audio_path="true" uri=""><![CDATA[<voice name="en-US-Wavenet-F" gender="female" languages="en-US">{Data.Element.DialogFlow_01.fulfillment_text}
-</voice>]]></static>
+<static default_audio_path="true" uri=""><![CDATA[{Data.Element.DialogFlow_01.fulfillment_text}
+]]></static>
 </audio_item_config>
 </audio_item>
 </audio_group>

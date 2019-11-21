@@ -3,7 +3,6 @@
 <config>
 <settings>
 <setting name="project_id">ciscoss-dev-9gkv</setting>
-<setting name="language">en-in</setting>
 <setting name="output_as_audio">true</setting>
 <setting name="noinput_timeout">5s</setting>
 <setting name="max_noinput_count">3</setting>
