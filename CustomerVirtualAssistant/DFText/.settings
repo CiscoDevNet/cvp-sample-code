@@ -2,9 +2,10 @@
 <project_settings version="6.0.1">
 <general_settings>
 <deploy_version>10.5</deploy_version>
-<maintainer/>
-<language/>
-<encoding/>
+<maintainer>Gourav Jain</maintainer>
+<language>en-US</language>
+<voice_name>en-US-Wavenet-D</voice_name>
+<encoding>UTF-8</encoding>
 <subdialog>false</subdialog>
 <session_timeout>30</session_timeout>
 <gateway>cisco_dtmf_01</gateway>

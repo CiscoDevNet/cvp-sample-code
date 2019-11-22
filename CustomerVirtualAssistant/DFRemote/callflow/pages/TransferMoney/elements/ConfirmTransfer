@@ -4,13 +4,14 @@
 <settings>
 <setting name="project_id">{LocalVar.serviceAccount}</setting>
 <setting name="inputmode">voice</setting>
-<setting name="language">{LocalVar.language}</setting>
 <setting name="noinput_timeout">5s</setting>
 <setting name="max_noinput_count">3</setting>
 <setting name="max_nomatch_count">3</setting>
 <setting name="term_char">#</setting>
 <setting name="max_input">30s</setting>
 <setting name="final_silence">2s</setting>
+<setting name="phrase_hints"/>
+<setting name="alternate_languages"/>
 <setting name="secure_logging">false</setting>
 </settings>
 <audio>

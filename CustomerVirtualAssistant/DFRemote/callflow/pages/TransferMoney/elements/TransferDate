@@ -3,7 +3,6 @@
 <config>
 <settings>
 <setting name="inputmode">dtmf+voice</setting>
-<setting name="language">en-in</setting>
 <setting name="noinput_timeout">5s</setting>
 <setting name="max_noinput_count">3</setting>
 <setting name="max_nomatch_count">3</setting>
@@ -14,6 +13,7 @@
 <setting name="Intent">TransferMoney</setting>
 <setting name="variable">date</setting>
 <setting name="last_node">false</setting>
+<setting name="phrase_hints">$DAY, $MONTH, $YEAR</setting>
 <setting name="secure_logging">false</setting>
 </settings>
 <audio>

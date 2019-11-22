@@ -3,7 +3,6 @@
 <config>
 <settings>
 <setting name="inputmode">voice</setting>
-<setting name="language">en-us</setting>
 <setting name="noinput_timeout">5s</setting>
 <setting name="max_noinput_count">3</setting>
 <setting name="max_nomatch_count">3</setting>
@@ -13,6 +12,7 @@
 <setting name="Intent">TransferMoney</setting>
 <setting name="variable">TransferType</setting>
 <setting name="last_node">false</setting>
+<setting name="phrase_hints">Cash, PayTM</setting>
 <setting name="secure_logging">false</setting>
 </settings>
 <audio>

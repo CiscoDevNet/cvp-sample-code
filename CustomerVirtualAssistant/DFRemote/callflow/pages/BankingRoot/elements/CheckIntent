@@ -2,7 +2,7 @@
 <decision id="Element@1417620904:1564001015036" name="CheckIntent" version="6.0.1">
 <config>
 <source type="Decision Editor"><![CDATA[<knowledge_base>
-    <rule name="Decision_01" default_exit_state="None">
+    <rule name="CheckIntent" default_exit_state="None">
         <exit_state name="TransferMoney" conjugate="and">
             <string operator="equal">
                 <data>

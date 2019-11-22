@@ -2,12 +2,13 @@
 <project_settings version="6.0.1">
 <general_settings>
 <deploy_version>10.5</deploy_version>
-<maintainer/>
+<maintainer>Gourav Jain</maintainer>
 <language>en-US</language>
-<encoding/>
+<voice_name>en-US-Wavenet-C</voice_name>
+<encoding>UTF-8</encoding>
 <subdialog>false</subdialog>
 <session_timeout>30</session_timeout>
-<gateway>cisco_dtmf_02</gateway>
+<gateway>cisco_dtmf_01</gateway>
 <loggers>
 <logger class="com.audium.logger.application.error.ApplicationErrorLogger" enforce_call_event_order="false" name="ErrorLog">
 <config_file name="ErrorLogConfig.xml"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
@@ -99,8 +100,5 @@ LoggerEvent.6=xmlApiError]]></config_file>
 <default_audio_path/>
 </audio_settings>
 <endpoint_settings/>
-<root_doc_settings>
-<vxml_property name="com.cisco.voiceName">en-US-Wavenet-C</vxml_property>
-<vxml_property name="com.cisco.gender">FEMALE</vxml_property>
-</root_doc_settings>
+<root_doc_settings/>
 </project_settings>

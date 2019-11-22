@@ -3,7 +3,6 @@
 <config>
 <settings>
 <setting name="serviceAccount">"ciscoss-dev-9gkv"</setting>
-<setting name="language">"en-in"</setting>
 </settings>
 </config>
 </action_element>
