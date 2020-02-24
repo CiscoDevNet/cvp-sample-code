@@ -10,31 +10,12 @@ Documentation:
 
 For CVA feature CVP Call Studio introduced four new elements.
 
-* Dialogflow Element: The DialogFlow element can be used to engage the Google Dialogflow services. 
-The DialogFlow element is located under the Customer Virtual Assistant group in the Call Studio Elements. 
-This element is an extension of Form element and it engages the special resource on VVB called Speech Server to communicate with the Dialogflow Server. 
-To indicate the Dialogflow server resource requirement, Call Studio creates a specific grammar - builtin:speech/nlp@dialogflow - and sends it to VVB in VXML Page.
+* [Dialogflow Call Studio Element Specification](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/customer_voice_portal/cvp_12_5/reference/guide/ccvp_b_1251-element-specification-guide-cvp/ccvp_b_1251-element-specification-guide-cvp_chapter_0111001.html)
 
-[Dialogflow Call Studio Element Specification](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/customer_voice_portal/cvp_12_5/reference/guide/ccvp_b_1251-element-specification-guide-cvp/ccvp_b_1251-element-specification-guide-cvp_chapter_0111001.html)
+* [DialogflowIntent Call Studio Element Specification](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/customer_voice_portal/cvp_12_5/reference/guide/ccvp_b_1251-element-specification-guide-cvp/ccvp_b_1251-element-specification-guide-cvp_chapter_0111011.html)
 
-* DialogflowIntent Element: The DialogFlowIntent element can be used to engage the Google Dialogflow services. The DialogFlowIntent element is located under the Customer Virtual Assistant group in the Call Studio Elements. 
-This element is an extension of Form element and it engages the Speech Server resource on VVB to communicate with the Google Speech to Text Server to get user input and then send it to dialogflow and finds user intent from it. 
-To indicate the Dialogflow server resource requirement, Call Studio creates a specific grammar - builtin:speech/transcribe - and sends it to VVB in VXML Page.
+* [DialogflowParam Call Studio Element Specification](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/customer_voice_portal/cvp_12_5/reference/guide/ccvp_b_1251-element-specification-guide-cvp/ccvp_b_1251-element-specification-guide-cvp_chapter_0111100.html)
 
-[DialogflowIntent Call Studio Element Specification](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/customer_voice_portal/cvp_12_5/reference/guide/ccvp_b_1251-element-specification-guide-cvp/ccvp_b_1251-element-specification-guide-cvp_chapter_0111011.html)
+* [Transcribe Call Studio Element Specification](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/customer_voice_portal/cvp_12_5/reference/guide/ccvp_b_1251-element-specification-guide-cvp/ccvp_b_1251-element-specification-guide-cvp_chapter_0111010.html)
 
-* DialogflowParam Element: The DialogFlowParam element can be used to engage the Google Dialogflow services. The DialogFlowParam element is located under the Customer Virtual Assistant group in the Call Studio Elements. 
-This element is an extension of Form element and it engages the Speech Server resource on VVB to communicate with the Google Speech to Text Server to get user input and then send it to dialogflow and fills param value from it. 
-To indicate the Dialogflow server resource requirement, Call Studio creates a specific grammar - builtin:speech/transcribe - and sends it to VVB in VXML Page.
-
-[DialogflowParam Call Studio Element Specification](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/customer_voice_portal/cvp_12_5/reference/guide/ccvp_b_1251-element-specification-guide-cvp/ccvp_b_1251-element-specification-guide-cvp_chapter_0111100.html)
-
-* Transcribe Element: The Transcribe element in Call Studio can be used to engage the Google Speech to Text services. 
-The Transcribe element is located under the Customer Virtual Assistant group in the Call Studio Elements. 
-This element is extension of the Form element and it engages the Speech Server resource on VVB to communicate with the Google Speech to Text Server. 
-To indicate the Speech to Text server resource requirement, Call Studio creates a specific grammar - builtin:speech/transcribe - and sends it to VVB in a VXML Page. 
-It does not specify which transcribe service is to be used, this is configured at VVB.
-
-[Transcribe Call Studio Element Specification](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/customer_voice_portal/cvp_12_5/reference/guide/ccvp_b_1251-element-specification-guide-cvp/ccvp_b_1251-element-specification-guide-cvp_chapter_0111010.html)
-
-Note: The Transcribe element works only in VoiceXML 2.1 with Cisco DTMF VoiceXML Gateway adaptor.
+Note: The CVA element works only in "VoiceXML 2.1 with Cisco DTMF" or "Cisco DTMF" VoiceXML Gateway adaptor.
