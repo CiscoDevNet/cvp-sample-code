@@ -15,6 +15,7 @@ Demonstrates the capabilities of Dialogflow Callstudio Element.
 * Create a new Intent "AgentTransfer" and train it with relevant "Training Phrases".
 ## Application Behaviour
 * Sends the "Initiation Text" to Dialogflow to initialize the dialog.
+* Streams the user audio to Google Dialogflow, receives the audio response and play it and loops the flow.
 * Receive the Intent and other parameter from Dialogflow, Handle the exit state to break the loop based on intent.
 * Store the values as required from the dialogflow responses and return it with subdialog return callstudio element back to CallServer / ICM, so that based on this routing can happen to right skill set.
 ## Application Ehnancements
