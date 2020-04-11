@@ -1,7 +1,6 @@
 # Application DFAudio
 Demonstrates the capabilities of Dialogflow Callstudio Element.
 ## Preconditions
-# Google Documentation
 * Enable [Dialogflow API](https://cloud.google.com/dialogflow/docs/quick/setup#api)
 * Enable [Dialogflow Billing](https://cloud.google.com/dialogflow/docs/quick/setup#billing)
 * Upgrade to [Enterprise Edition](https://cloud.google.com/dialogflow/docs/editions#choose_an_edition_and_pricing_plan) for advanced Dialogflow features.
