@@ -8,10 +8,11 @@ Customer Virtual Assistant(CVA) enables the Customer Voice Portal(CVP) IVR Platf
 * [DialogflowParam](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/customer_voice_portal/cvp_12_5/reference/guide/ccvp_b_1251-element-specification-guide-cvp/ccvp_b_1251-element-specification-guide-cvp_chapter_0111100.html) Call Studio Element Specification
 * [Transcribe](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/customer_voice_portal/cvp_12_5/reference/guide/ccvp_b_1251-element-specification-guide-cvp/ccvp_b_1251-element-specification-guide-cvp_chapter_0111010.html) Call Studio Element Specification
 # Sample Examples
-* DFAudio: Demonstrates **Dialogflow Call Studio Element** (Google Dialogflow Audiooutput=true), streams the audio to Google Dialogflow and receives the audio from Dialogflow and plays it. 
-* DFText: Demonstrates **Dialogflow Call Studio Element** (Google Dialogflow Audiooutput=false), streams the audio to Google Dialogflow and receives the text from Dialogflow and plays the text using Google TTS.
-* DFRemote: Demonstrates **DialogflowIntent & DialogflowParam Call Studio Element**, streams the audio to configured ASR receives the text sends the text for NLU to Dialogflow receives text from Dialogflow, plays the text using TTS.
-* Transcribe: Demonstrates **Transcribe Call Studio Element**, streams the audio to configured ASR receives the text.
+Download the Sample Application zip file as per your need and import it into Call Studio tool and perform the necessary customization in the application and then deploy the application to VXML Server.
+* DFAudio: Demonstrates **Dialogflow Call Studio Element** (Google Dialogflow Audiooutput=true), streams the audio to Google Dialogflow and receives the audio from Dialogflow and plays it. Use this app for easiest and fastest integration with Google Dialogflow Agent.
+* DFText: Demonstrates **Dialogflow Call Studio Element** (Google Dialogflow Audiooutput=false), streams the audio to Google Dialogflow and receives the text from Dialogflow and plays the text using Google TTS. Use this sample application as a reference for better performance compare to DFAudio as repeatative prompts are cached.
+* DFRemote: Demonstrates **DialogflowIntent & DialogflowParam Call Studio Element**, streams the audio to configured ASR receives the text sends the text for NLU to Dialogflow receives text from Dialogflow, plays the text using TTS. Use this application as a reference to get better control over the call flow in Call Studio, DTMF detection etc.
+* Transcribe: Demonstrates **Transcribe Call Studio Element**, streams the audio to configured ASR receives the text. Use this application as a reference for plain Speech to text operation, DTMF detection, Multilingual recognition etc.
 # Google Documentation
 * Enable [Dialogflow API](https://cloud.google.com/dialogflow/docs/quick/setup#api)
 * Enable [Cloud Speech-to-Text API](https://cloud.google.com/apis/docs/getting-started#enabling_apis) (Optional)
