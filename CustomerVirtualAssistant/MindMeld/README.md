@@ -1,4 +1,4 @@
-This Section contains souce code to build MindMeld (Botlite) callstudio element and sample callstudio application to demonstrate capability of MindMeld with CVP.
+This Section contains instructions to setup and configure CVP with MindMeld(Botlite).
 
 # Instruction to set up CVP with MindMeld(Botlite)
 
