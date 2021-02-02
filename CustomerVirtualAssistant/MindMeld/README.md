@@ -1,4 +1,4 @@
-This Section contains instructions to setup and configure CVP with MindMeld(Botlite).
+This Section contains instructions to setup and configure CVP with MindMeld(Botlite) Along with sample Call Studio Application.
 
 # Instruction to set up CVP with MindMeld(Botlite)
 
