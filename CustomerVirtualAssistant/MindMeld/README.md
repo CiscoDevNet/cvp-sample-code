@@ -68,4 +68,7 @@ This Section contains souce code to build MindMeld callstudio element and sample
   ### Element Output
   ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/element_output.png?raw=true "Element Configuration")
   
+  ### Call Studio Flow
+   ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/flow.png?raw=true "Element Configuration")
+  
   
