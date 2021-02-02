@@ -54,6 +54,8 @@ This Section contains souce code to build MindMeld (Botlite) callstudio element 
     
  [Link to register Cloud Connect on Control Hub](https://help.webex.com/en-us/n24wo0fb/Register-Cloud-Connect)
  
+ [MindMeld (Botlite) configuration Guide](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/Botlite_documentation.pdf)
+ 
   ## Element Settings
   
   ### Root element setting
