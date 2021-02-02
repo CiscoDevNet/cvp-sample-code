@@ -3,8 +3,8 @@ This Section contains souce code to build MindMeld callstudio element and sample
 # Instruction to set up VXML server
 
 ## Prerequisite
-  * CVP and Call Studio 12.6 EFT 1 Build
-  * Required 12.6 Cloud Connect setup.
+  * 12.6 EFT 1 Build - CVP and Call Studio.
+  * 12.6 Cloud Connect setup.
   
   ## Call Studio setup
   * Close Call Studio IDE
