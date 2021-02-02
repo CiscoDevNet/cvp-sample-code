@@ -8,18 +8,18 @@ This Section contains instructions to setup and configure CVP with MindMeld(Botl
   
   ## Call Studio setup
   * Close Call Studio IDE
-  * Copy the mindmeld.jar in <CALLSTUDIO_HOME>\eclipse\plugins\com.audiumcorp.studio.elements.core\lib
-  * reopen Call Studio IDE.
+  * Copy the mindmeld.jar to <CALLSTUDIO_HOME>\eclipse\plugins\com.audiumcorp.studio.elements.core\lib\
+  * Reopen Call Studio IDE.
   * MindMeld element appears under "Customer Virtual Assistant" in Elements section.
   
   ## VXML Server setup
   * Stop VXML server
-  * Copy mindmeld.jar to <CVP_HOME>\VXMLServer\common\lib
+  * Copy mindmeld.jar to <CVP_HOME>\VXMLServer\common\lib\
   * Restart VXML server.
   
   ## Deploy sample Call Studio app
-  * download callstudio_app.zip
-  * import into Call Studio
+  * Download callstudio_app.zip
+  * Import into Call Studio
   * Validate it and deploy into vxml server
   
   
