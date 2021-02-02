@@ -57,18 +57,14 @@ This Section contains souce code to build MindMeld callstudio element and sample
   ## Element Settings
   
   ### Root element setting
- ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/root_element_config.png?raw=true "Element Configuration")
+ ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/root_element_config.png?raw=true "Root Element Setting")
  
   ### Param element setting
- ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/param_element_config.png?raw=true "Element Configuration")
+ ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/param_element_config.png?raw=true "Param Element Configuration")
  
  ### Exit States
-  ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/exit_state.png?raw=true "Element Configuration")
+ ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/exit_state.png?raw=true "Exit States")
   
   ### Element Output
-  ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/element_output.png?raw=true "Element Configuration")
-  
-  ### Call Studio Flow
-   ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/flow.png?raw=true "Element Configuration")
-  
+ ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/element_output.png?raw=true "Element Output")
   
