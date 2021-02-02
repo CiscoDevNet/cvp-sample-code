@@ -57,7 +57,7 @@ This Section contains souce code to build MindMeld callstudio element and sample
     
   ## Element Settings
  
- ![Alt text](/resources/root element.png.jpg?raw=true "Element Configuration")
+ ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/param_element.png?raw=true "Element Configuration")
   
   
 
