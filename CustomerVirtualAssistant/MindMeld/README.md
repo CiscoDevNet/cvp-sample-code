@@ -52,8 +52,8 @@ This Section contains souce code to build MindMeld callstudio element and sample
     Step 8	
     Restart Cisco CVP CallServer service.
     
-    [Link to register Cloud Connect on Control Hub](https://help.webex.com/en-us/n24wo0fb/Register-Cloud-Connect)
-    
+ [Link to register Cloud Connect on Control Hub](https://help.webex.com/en-us/n24wo0fb/Register-Cloud-Connect)
+ 
   ## Element Settings
  
  ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/root_element.png?raw=true "Element Configuration")
