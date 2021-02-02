@@ -53,9 +53,9 @@ This Section contains souce code to build MindMeld (Botlite) callstudio element 
     Restart Cisco CVP CallServer service.
     
    ## Registration of Cloud Connect to Webex Control hub. 
- [Link to register Cloud Connect on Control Hub](https://help.webex.com/en-us/n24wo0fb/Register-Cloud-Connect)
+ [Register Cloud Connect on Control Hub](https://help.webex.com/en-us/n24wo0fb/Register-Cloud-Connect)
  
- ## BotLite config guide 
+ ## BotLite configuration guide 
  [MindMeld (Botlite) configuration Guide](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/Botlite_documentation.pdf)
  
   ## Element Settings
