@@ -66,5 +66,5 @@ This Section contains souce code to build MindMeld callstudio element and sample
  ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/exit_state.png?raw=true "Exit States")
   
   ### Element Output
- ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/element_output.png?raw=true "Element Output")
+ ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/element_data.png?raw=true "Element Output")
   
