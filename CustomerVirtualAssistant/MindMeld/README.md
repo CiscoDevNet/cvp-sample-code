@@ -53,13 +53,12 @@ This Section contains souce code to build MindMeld callstudio element and sample
     Restart Cisco CVP CallServer service.
     
     Link to register Cloud connect on to Control Hub (https://help.webex.com/en-us/n24wo0fb/Register-Cloud-Connect)
-   
-  
-    ## MindMeld element specification
+
     
-    Settings
-    
-    
+  ## Deploy sample Call Studio app
+  * download callstudio_app.zip
+  * import into Call Studio
+  * Validate it and deploy into vxml server   
   
   
 
