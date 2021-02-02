@@ -1,0 +1,16 @@
+0000000000: 192.168.160.128: Jul 15 2020 22:52:00.453 +0530: %CCBU___________MMCA-5-AUDIT_LOG_LEVEL: %[ss_log_level=INFO]: Log Level now set 
+0000000000: 192.168.160.128: Jul 15 2020 22:52:00.461 +0530: %CCBU_________APACHE-5-AUDIT_LOG_LEVEL: %[ss_log_level=WARN]: Log Level now set 
+0000000000: 192.168.160.128: Jul 15 2020 22:52:00.461 +0530: %CCBU_SPRINGFRAMEWORK-5-AUDIT_LOG_LEVEL: %[ss_log_level=WARN]: Log Level now set 
+0000000000: 192.168.160.128: Jul 15 2020 22:52:00.462 +0530: %CCBU_INFRASTRUCTURE-5-AUDIT_LOG_LEVEL: %[ss_log_level=INFO]: Log Level now set 
+0000000001: 192.168.160.128: Jul 15 2020 22:52:00.463 +0530: %CCBU_INFRASTRUCTURE-6-AUDIT_LOG_LEVEL_MASK: %[svcmgr_log_level=WARN][svcmgr_name=org.apache][svcmgr_trace_mask=0]: ServiceabilityManager log level and trace mask 
+0000000002: 192.168.160.128: Jul 15 2020 22:52:00.463 +0530: %CCBU_INFRASTRUCTURE-6-AUDIT_LOG_LEVEL_MASK: %[svcmgr_log_level=INFO][svcmgr_name=Infrastructure][svcmgr_trace_mask=0]: ServiceabilityManager log level and trace mask 
+0000000003: 192.168.160.128: Jul 15 2020 22:52:00.463 +0530: %CCBU_INFRASTRUCTURE-6-AUDIT_LOG_LEVEL_MASK: %[svcmgr_log_level=INFO][svcmgr_name=mmca][svcmgr_trace_mask=0]: ServiceabilityManager log level and trace mask 
+0000000004: 192.168.160.128: Jul 15 2020 22:52:00.463 +0530: %CCBU_INFRASTRUCTURE-6-AUDIT_LOG_LEVEL_MASK: %[svcmgr_log_level=WARN][svcmgr_name=org.springframework][svcmgr_trace_mask=0]: ServiceabilityManager log level and trace mask 
+0000000005: 192.168.160.128: Jul 15 2020 22:52:00.464 +0530: %CCBU_INFRASTRUCTURE-6-AUDIT_LOG_SIZE: %[log_limit_governor_name=null][max_dir_size=5000][max_file_size=50]: Maximum log file size and maximum logging directory size in MB 
+0000000006: 192.168.160.128: Jul 15 2020 22:52:00.464 +0530: %CCBU_INFRASTRUCTURE-5-VERSION: %[build_date=Jan 01, 1970 5:30 AM][build_type=rel][product_name=Unknown product][version_number=Unknown product_-1_-1_-1_-1_-1_-1_-1]: Product version information. 
+0000000007: 192.168.160.128: Jul 15 2020 22:52:00.464 +0530: %CCBU_INFRASTRUCTURE-6-AUDIT_LOG_CONFIG_FILE: %[file_name=null]: Logging configuration file 
+0000000000: 192.168.160.128: Jul 15 2020 22:52:00.469 +0530: %CCBU____VXML_SERVER-5-AUDIT_LOG_LEVEL: %[ss_log_level=INFO]: Log Level now set 
+0000000001: 192.168.160.128: Jul 15 2020 22:52:00.489 +0530: %CCBU____VXML_SERVER-6-VXML_INFO:  %s 
+0000000002: 192.168.160.128: Jul 15 2020 22:52:00.489 +0530: %CCBU____VXML_SERVER-6-VXML_INFO:  %s 
+0000000003: 192.168.160.128: Jul 15 2020 22:52:03.785 +0530: %CCBU____VXML_SERVER-6-VXML_INFO:  %s 
+0000000004: 192.168.160.128: Jul 15 2020 22:52:03.785 +0530: %CCBU____VXML_SERVER-6-VXML_INFO:  %s 

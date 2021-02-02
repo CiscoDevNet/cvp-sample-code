@@ -1,0 +1,15 @@
+com\callstudio\cva\MMService.class
+com\callstudio\cva\MMSessionContext.class
+com\callstudio\cva\request\DynamicResource.class
+com\callstudio\cva\MMindMeldIntent$1.class
+com\callstudio\cva\request\Gazetteers.class
+com\callstudio\cva\response\Entity.class
+com\callstudio\cva\Constants.class
+com\callstudio\cva\response\DetectIntentResponse.class
+com\callstudio\cva\MMindMeldIntent.class
+com\callstudio\cva\response\Result.class
+com\callstudio\cva\request\DetectIntentRequest.class
+com\callstudio\cva\CloudConnector.class
+com\callstudio\cva\MMUtil.class
+com\callstudio\cva\App.class
+com\callstudio\cva\AudiumConstants.class
