@@ -55,10 +55,9 @@ This Section contains souce code to build MindMeld callstudio element and sample
     Link to register Cloud connect on to Control Hub (https://help.webex.com/en-us/n24wo0fb/Register-Cloud-Connect)
 
     
-  ## Deploy sample Call Studio app
-  * download callstudio_app.zip
-  * import into Call Studio
-  * Validate it and deploy into vxml server   
+  ## Element Settings
+ 
+ ![Alt text](/resources/root element.png.jpg?raw=true "Element Configuration")
   
   
 
