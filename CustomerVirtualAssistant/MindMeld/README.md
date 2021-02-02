@@ -45,13 +45,21 @@ This Section contains souce code to build MindMeld callstudio element and sample
     In the Password text box, enter the Cloud Connect administrator password.
     Step 7	
     Click Save.
+    Step 8
+    Add below properties in <CVP_HOME>/conf/sip.properties
+        SIP.CloudConnect.AgentAssistAuthTokenApi = /cloudconnectmgmt/token
+        SIP.CloudConnect.AgentAssistAuthTokenScopes = cjp-ccai:read
     Step 8	
     Restart Cisco CVP CallServer service.
     
-    Link to register Cloud connect on to Coontrol Hub (https://help.webex.com/en-us/n24wo0fb/Register-Cloud-Connect)
+    Link to register Cloud connect on to Control Hub (https://help.webex.com/en-us/n24wo0fb/Register-Cloud-Connect)
    
   
-  
+    ## MindMeld element specification
+    
+    Settings
+    
+    
   
   
 
