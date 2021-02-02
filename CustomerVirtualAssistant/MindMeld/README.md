@@ -1,6 +1,6 @@
 This Section contains souce code to build MindMeld (Botlite) callstudio element and sample callstudio application to demonstrate capability of MindMeld with CVP.
 
-# Instruction to set up VXML server
+# Instruction to set up CVP with MindMeld(Botlite)
 
 ## Prerequisite
   * 12.6 EFT 1 Build - CVP and Call Studio.
@@ -52,8 +52,10 @@ This Section contains souce code to build MindMeld (Botlite) callstudio element 
     Step 8	
     Restart Cisco CVP CallServer service.
     
+   ##Registration of Cloud Connect to Webex Control hub. 
  [Link to register Cloud Connect on Control Hub](https://help.webex.com/en-us/n24wo0fb/Register-Cloud-Connect)
  
+ ##BotLite config guide 
  [MindMeld (Botlite) configuration Guide](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/Botlite_documentation.pdf)
  
   ## Element Settings
