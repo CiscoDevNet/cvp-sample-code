@@ -55,9 +55,11 @@ This Section contains souce code to build MindMeld callstudio element and sample
  [Link to register Cloud Connect on Control Hub](https://help.webex.com/en-us/n24wo0fb/Register-Cloud-Connect)
  
   ## Element Settings
- 
+  
+  ### Root element setting
  ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/root_element_config.png?raw=true "Element Configuration")
  
-  ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/param_element_config.png?raw=true "Element Configuration")
+  ### Param element setting
+ ![Alt text](https://github.com/CiscoDevNet/cvp-sample-code/blob/master/CustomerVirtualAssistant/MindMeld/resources/param_element_config.png?raw=true "Element Configuration")
   
   
