@@ -5,6 +5,7 @@ This Section contains instructions to setup and configure CVP with MindMeld(Botl
 ## Prerequisite
   * 12.6 EFT 1 Build - CVP and Call Studio.
   * 12.6 Cloud Connect setup.
+  * Google ASR to be configured on speech server.
   
   ## Call Studio setup
   * Close Call Studio IDE
