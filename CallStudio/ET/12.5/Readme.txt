@@ -1,17 +1,17 @@
-Prerequisite: CVP 12.5.1 FCS Call Studio
+# Prerequisite: 
+CVP 12.5.1 FCS Call Studio
 Compatible with CVP 12.5 ES 24 onwards.
 
 ET is present in Call_Studio_12.5_ET.zip
 
-This ET has below defects fixed.
+# Defects fixed.
 
+* CSCvy39652 - DialogFlowParam Element Reset Parameter.
+* CSCvy39125 - Allow Substitutions for Intent Settings in DialogFllowParam Element
+* CSCvw09507 - CVP application with WSDL takes long time to load upon clicking decision editor.
+* CSCvy53187 - Decision element gives an error: "An error has occurred. See error log for more details.
 
-CSCvy39652 - DialogFlowParam Element Reset Parameter.
-CSCvy39125 - Allow Substitutions for Intent Settings in DialogFllowParam Element
-CSCvw09507 - CVP application with WSDL takes long time to load upon clicking decision editor.
-CSCvy53187 - Decision element gives an error: "An error has occurred. See error log for more details.
-
-Instruction to patch call studio
+# Instruction to patch call studio
 
 1. Close call studio IDE
 2. Replace elements.jar in below locations
