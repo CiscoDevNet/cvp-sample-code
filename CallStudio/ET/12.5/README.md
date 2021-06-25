@@ -1,6 +1,7 @@
 ## Prerequisite: 
 CVP 12.5.1 FCS Call Studio
 Compatible with CVP 12.5 ES 24 onwards.
+Note: Take a back up of jars before replacing.
 
 ET is present in Call_Studio_12.5_ET.zip
 
@@ -25,7 +26,6 @@ ET is present in Call_Studio_12.5_ET.zip
 	--CALLSTUDIO_HOME\eclipse\plugins\com.audiumcorp.studio.builder.elementconfig
 	
 
-Note: Take a back up of jars before replacing.
 
 
 
