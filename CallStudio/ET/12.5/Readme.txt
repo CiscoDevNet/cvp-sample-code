@@ -1,4 +1,5 @@
 Prerequisite: CVP 12.5.1 FCS Call Studio
+Compatible with CVP 12.5 ES 24 onwards.
 
 ET is present in Call_Studio_12.5_ET.zip
 
