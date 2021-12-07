@@ -2,11 +2,11 @@
 CVP 12.6 FCS Call Studio
 
 
-Compatible with Base CVP 12.6  onwards.
+Compatible with CVP 12.6 latest available ES.
 
 Note: Take a back up of jars before replacing.
 
-ET is present in Call_Studio_12.6_ET.zip
+ET is present in Call_Studio_12.6_Patch.zip
 
 ## Defects fixed.
 
