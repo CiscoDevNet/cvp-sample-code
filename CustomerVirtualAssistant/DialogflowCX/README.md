@@ -1,6 +1,6 @@
 
 # Application DFCX
-Demonstrates the capabilities of DialogflowCx Callstudio Element.
+Demonstrates the capabilities of DialogflowCX Callstudio Element.
 
 ## Application Behaviour
 * Sends the "welcome_event" to Dialogflow CX to initialize the dialog.
