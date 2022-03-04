@@ -27,5 +27,7 @@ Download the Sample Application zip file as per your need and import it into Cal
 * [Dialogflow Basics](https://cloud.google.com/dialogflow/docs/basics)
 * [Setting up Dialogflow Agent](https://cloud.google.com/dialogflow/docs/quick/setup)
 * [Creating a Dialogflow Agent](https://cloud.google.com/dialogflow/docs/quick/build-agent)
+* [Dialogflow CX Basics](https://cloud.google.com/dialogflow/cx/docs/basics)
+* [Setting up Dialogflow CX Agent Quickstart](https://cloud.google.com/dialogflow/cx/docs/quick)
 
 **Note**: For OEM users onboarding process, refer to the **Customer Virtual Assistant > Prerequisites** section in the **Cisco Unified Contact Center Enterprise Features Guide** at https://www.cisco.com/c/en/us/support/customer-collaboration/unified-contact-center-enterprise/products-feature-guides-list.html.
