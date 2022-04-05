@@ -28,6 +28,6 @@ Demonstrates the capabilities of DialogflowCX Callstudio Element.
 * [Dialogflow CX PCCE Feature guide](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/pcce/pcce_12_6_1/maintenance/guide/pcce_b_features-guide-1261/ucce_b_features-guide-1261_chapter_01000.pdf)
 
 ## Instructions
-* The file attached contains call studio applications- cx_app and subdialogApp
-* Deployed applications- cx_deployed and sudialogApp_deployed 
+* The file attached contains call studio applications- cx_diff and subdialogApp
+* Deployed applications- cx_diff_deployed and sudialogApp_deployed 
 * Exported cx agent configured to use "start_event" as the welcome event name which can be changed accordingly
