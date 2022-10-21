@@ -20,7 +20,7 @@ Demonstrates the capabilities of Virtual Agent Voice Call Studio Element.
 * Output element data of VirtualAgentVoice element eventData can be parsed and used as per requirement.
 * Values in the Event Data attribute of VirtualAgentVoice is of form name:value pairs which support string, Valid Json as well as substitution with desired valid value.
 * SIP Headers Restricted is an optional attribute which can contain comma separated list for the sip headers  to be excluded from propagating to orchestration layer.                                                        Default value is null. All the headers will flow through if nothing specified.
-* WelcomePrompt can be used for transition experience optimisation and various other properties can be used during call start/in-between for VirtualAgentVoice.
+* Local prompt can be used for transition experience optimisation and various other properties can be used during call start/in-between for VirtualAgentVoice.
 * Support to the following VXML Properties added to VirtualAgentVoice Element -
 
        Recognize.model - Name of the model to be used for recognition
