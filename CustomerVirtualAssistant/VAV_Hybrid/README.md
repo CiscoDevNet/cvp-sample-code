@@ -42,4 +42,4 @@ Demonstrates the capabilities of Virtual Agent Voice Call Studio Element.
 ## Instructions
 * The file attached contains call studio application- VAV_CallStudio
 * Deployed application on vxml server- VAV_deployed
-* Exported cx agent as blob file configured to use “welcome_event" as the welcome Event Name  and “custom_event” for the re-entry which can be changed accordingly.
+* Exported cx agent as blob file also added.
