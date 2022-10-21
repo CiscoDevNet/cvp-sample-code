@@ -24,6 +24,7 @@ Demonstrates the capabilities of Virtual Agent Voice Call Studio Element.
 * Support to the following VXML Properties added to VirtualAgentVoice Element -
 
        Recognize.model - Name of the model to be used for recognition
+       com.cisco.language - 
        Recognize.modelVariant - It can have a few values including USE_BEST_AVAILABLE, USE_STANDARD, USE_ENHANCED
        Synthesize.voiceName - It refers to the name of the Voice to be used for the prompts coming from vendor side
        Synthesize.voiceGender - It refers to the gender of the Voice to be used for the prompts coming from vendor side
