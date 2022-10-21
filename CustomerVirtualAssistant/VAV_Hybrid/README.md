@@ -25,8 +25,8 @@ Demonstrates the capabilities of Virtual Agent Voice Call Studio Element.
 
        Recognize.model - Name of the model to be used for recognition
        Recognize.modelVariant - It can have a few values including USE_BEST_AVAILABLE, USE_STANDARD, USE_ENHANCED
-       Synthesize.voiceName - It refers to the name of the Voice to be used for the prompts coming from Google
-       Synthesize.voiceGender - It refers to the gender of the Voice to be used for the prompts coming from Google
+       Synthesize.voiceName - It refers to the name of the Voice to be used for the prompts coming from vendor side
+       Synthesize.voiceGender - It refers to the gender of the Voice to be used for the prompts coming from vendor side
 
 ## Virtual Agent Voice Element specific guide
 * In the VirtualAgentVoice element, mention the Config ID in the "Config ID" field. If this field is left blank default config is fetched.
