@@ -7,7 +7,7 @@ Demonstrates the capabilities of Virtual Agent Voice Call Studio Element.
 * Streams the user audio to Vendor side (Google/Nuance/etc), receives the audio response, play it and loops the flow.
 * Receive the Response from vendor side, handle the exit state to break the loop through Decision Element based on exit events (Agent Handoff or End of Session or Custom Exit).
 * Re-entry after custom exit is done through VirtualAgentVoice element (here in this sample application different VAV element with same config ID is used to re-enter) after digit/value collection.
-* At re-entry provide the desired Custom event name or substitution with element data- “eventName” can be used.
+* At re-entry provide the desired Custom event name.
 * For re-entry to the same VirtualAgentVoice element, _set value_ can be used to override the Event Name or Event Data value with desired ones.
 * After the custom exit, value is collected  on-prem as PIN number and added as Event Data using substitution for further use on cloud side service.
 
