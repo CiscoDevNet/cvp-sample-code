@@ -46,4 +46,3 @@ Demonstrates the capabilities of Virtual Agent Voice Call Studio Element with gr
 ## Instructions
 * The file attached contains call studio application- VAV_CallStudio
 * Deployed application on vxml server- VAV_deployed
-* Exported cx agent as blob file also added for reference.
