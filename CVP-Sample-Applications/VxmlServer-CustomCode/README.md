@@ -45,9 +45,9 @@ For HTTP and RPC call-  remote://system/?classurl=<fully_qualified_java_class_pa
 * "CustomCode.jar" is to be added on the remote server at location- %Apache Software Foundation%\webapps\customapis\WEB-INF\lib and then re-start the server.
 * Logs can be monitored at- 
 
-   For VXML-  %CVP_HOME%\logs\VXML\CVP <timestamp>.log
-              %CVP_HOME%\logs\VXML\ERROR <timestamp>.log
-              %CVP_HOME%\VXMLserver\application\<applicationname>\logs
+   For VXML-  %CVP_HOME%\logs\VXML\CVP.log,
+              %CVP_HOME%\logs\VXML\ERROR.log,
+              %CVP_HOME%\VXMLserver\application\applicationname\logs
 
    For Remote Server- %Apache Software Foundation%\Tomcat 9.0\logs\cvp.log
 
