@@ -28,7 +28,7 @@ On selecting the checkbox, the default URI mentioned below is being auto populat
 For HTTP and RPC call-  remote://system/?classurl=<fully_qualified_java_class_path>
 * A checkbox named "Remote Execution" has been added to the Say It Smart Plugin for executing it remotely.
   In case enabled, it will use the URI values provided in the Remote Url Settings tab.
-  
+
   Note: Say It Smart plugin gets remotely executed for RPC type and not HTTP connection type.
 
 
@@ -45,10 +45,10 @@ For HTTP and RPC call-  remote://system/?classurl=<fully_qualified_java_class_pa
 * "CustomCode.jar" is to be added on the remote server at location- %Apache Software Foundation%\webapps\customapis\WEB-INF\lib and then re-start the server.
 * Logs can be monitored at- 
 
-For VXML-     %CVP_HOME%\logs\VXML\CVP <timestamp>.log
+   For VXML-  %CVP_HOME%\logs\VXML\CVP <timestamp>.log
               %CVP_HOME%\logs\VXML\ERROR <timestamp>.log
-              %CVP_HOME%\VXMLserver\application\<application name>\logs
+              %CVP_HOME%\VXMLserver\application\<applicationname>\logs
 
-For Remote Server- %Apache Software Foundation%\Tomcat 9.0\logs\cvp.log
+   For Remote Server- %Apache Software Foundation%\Tomcat 9.0\logs\cvp.log
 
 
