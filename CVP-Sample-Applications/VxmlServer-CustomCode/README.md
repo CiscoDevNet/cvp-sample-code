@@ -42,7 +42,7 @@ For HTTP and RPC call-  remote://system/?classurl=<fully_qualified_java_class_pa
 * Here two file are attached as zip folder- "BankingAppCustomCode.zip" which contains application with TTS prompts configured and "BankingAppCustomCodeWav.zip" which contains application with wav files configured.
 * The files attached contains call studio application - inside "BankingAppCustomCode_CS" folder
 * Deployed application on Vxml Server - inside "BankingAppCustomCode_deployed" folder
-* The file named - "BankingAppCustomCodeWav.zip" contains the application and deployed application with wav files configured.
+* The file named - "BankingAppCustomCodeWav.zip" contains the application with wav files configured.
 * "BankingAppCustomCodeWav.zip" contains the audio folder with wav files which needs to be copied at the following location- %CVP_HOME%\VXMLServer\Tomcat\webapps\CVP\audio and then VXML server has to be restarted.
 * Add the "CustomCode.jar" attached in zip folder at the following location in Call Studio- CallStudio\eclipse\plugins\com.audiumcorp.studio.elements.core and re-open Call Studio for changes to be reflected in Call Studio Builder.
 * "CustomCode.jar" is to be added on the remote server at location- %Apache Software Foundation%\webapps\customapis\WEB-INF\lib and then re-start the server.
