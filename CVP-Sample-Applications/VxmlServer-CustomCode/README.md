@@ -15,7 +15,7 @@ Demonstrates the capabilities of Callstudio Custom Elements executed on Remote S
   For this app, provided wrong class name under remote execution value to get "ClassNotFoundException"
 
 ## Application Enhancements
-* The HTTP port listens at "8080",  HTTP secure port listens at "8084" and GRPC port listens at "8090".
+* The HTTP port listens at "8080" and GRPC port listens at "8090".
 * For remote execution of the Elements, the following syntax for URI is to be used 
   For HTTP and RPC call-  remote://system/?classurl=<fully_qualified_java_class_path>
 
@@ -39,8 +39,11 @@ For HTTP and RPC call-  remote://system/?classurl=<fully_qualified_java_class_pa
 
 
 ## Instructions
-* The file attached contains call studio application- inside 'BankingAppCustomCode_CS" folder
-* Deployed application on Vxml Server-  inside "BankingAppCustomCode_deployed" folder
+* Here two file are attached as zip folder- "BankingAppCustomCode.zip" which contains application with TTS prompts configured and "BankingAppCustomCodeWav.zip" which contains application with wav files configured.
+* The files attached contains call studio application - inside "BankingAppCustomCode_CS" folder
+* Deployed application on Vxml Server - inside "BankingAppCustomCode_deployed" folder
+* The file named - "BankingAppCustomCodeWav.zip" contains the application and deployed application with wav files configured.
+* "BankingAppCustomCodeWav.zip" contains the audio folder with wav files which needs to be copied at the following location- %CVP_HOME%\VXMLServer\Tomcat\webapps\CVP\audio and then VXML server has to be restarted.
 * Add the "CustomCode.jar" attached in zip folder at the following location in Call Studio- CallStudio\eclipse\plugins\com.audiumcorp.studio.elements.core and re-open Call Studio for changes to be reflected in Call Studio Builder.
 * "CustomCode.jar" is to be added on the remote server at location- %Apache Software Foundation%\webapps\customapis\WEB-INF\lib and then re-start the server.
 * Logs can be monitored at- 
