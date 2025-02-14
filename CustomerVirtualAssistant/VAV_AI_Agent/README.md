@@ -44,7 +44,7 @@ Demonstrates the capabilities of Virtual Agent Voice Call Studio Element with gr
 ## Instructions
 * The file attached contains:
    * VAV_AI_Agent -  AI Agent with Fallback as well as Custom Exit and Re-entry to same or diff AI Agent
-   * AI Agent Sample JSON - Customer can import the AI Agent and try out the flows for references.
+   * AI_Agent_Sample_JSON - Customer can import the AI Agent and try out the flows for references.
 
-* Call studio application is present in folder named "VAV_AIAgent_Scripted"
+* Call studio application is present in folder named "VAV_AIAgent_Scripted" which can be imported and used
 * Deployed application on vxml server is present in folder named "VAV_AIAgent_Scripted_deployed"
