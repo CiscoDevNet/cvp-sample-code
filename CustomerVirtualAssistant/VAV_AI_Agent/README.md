@@ -40,6 +40,18 @@ Demonstrates the capabilities of Virtual Agent Voice Call Studio Element with gr
 * In VirtualAgentVoice element, add a event with event type as "VXML Event" and select "error.noresource" in event list. With this a new separate flow can be created for any noresource error. Refer the pdf attached for different types of noresource scenarios.
 * The "Error" exit state of VirtualAgentVoice element can be used to handle any grpc error from Universal Harness services. The "error_code" is populated as element data of VirtualAgentVoice on grpc error,which can be used to create a separate flow to gracefully handle any grpc error from Universal Harness services. Refer the pdf attached for different types of grpc error scenarios.
 
+### Error Handling for Virtual Agent Voice
+For seamless integration of VirtualAgentVoice, every dialogue in the with the AI Agent MUST have a response to be played back to the caller.
+
+If an AI Agent lacks any dialogue without agent response defined, the VirtualAgentVoice call flow will terminate with an error.badfetch. This prevents undesirable “dead air” with indication to ensures agent responses are properly defined in the AI Agent. Thus, it is recommended to provide agent responses for every dialogue to avoid VirtualAgentVoice call flow termination with an error.badfetch.
+
+If handling error.badfetch gracefully is preferred instead of defining responses for every dialogue, Call Studio application developers using the VirtualAgentVoice element can manage this error similarly to error.noresource.
+
+To define an exit state in the VirtualAgentVoice element:
+* Add an event with Event Type set to "VXML Event"
+* Select "error.badfetch" from the event list
+
+This exit state in VirtualAgentVoice element ensures a controlled call flow, even in cases where agent responses are missing.
 
 ## Instructions
 * The file attached contains:
