@@ -38,6 +38,22 @@ Demonstrates the capabilities of Virtual Agent Voice Call Studio Element with gr
 * In VirtualAgentVoice element, add a event with event type as "VXML Event" and select "error.noresource" in event list. With this a new separate flow can be created for any noresource error. Refer the pdf attached for different types of noresource scenarios.
 * The "Error" exit state of VirtualAgentVoice element can be used to handle any grpc error from Universal Harness services. The "error_code" is populated as element data of VirtualAgentVoice on grpc error,which can be used to create a separate flow to gracefully handle any grpc error from Universal Harness services. Refer the pdf attached for different types of grpc error scenarios.
 
+### Error Handling for Virtual Agent Voice
+ For seamless integration of VirtualAgentVoice with the Google DFCX Agent, every dialogue response must include at least one of the following:
+1.	Output audio text (with or without SSML)
+2.	Pre-recorded audio playback
+
+   Agent responses can contain multiple instances of Output audio text and Pre-recorded audio, in any order. However, Output audio text cannot be empty or consist solely of spaces.
+
+   If a DFCX Agent lacks any dialogue without agent response defined, the VirtualAgentVoice call flow will terminate with an error.badfetch. This prevents undesirable “dead air” with indication  to ensures agent responses are properly defined in Google DFCX. Thus, it is recommended to provide agent responses for every dialogue to avoid VirtualAgentVoice call flow termination with an error.badfetch.
+
+   If handling error.badfetch gracefully is preferred instead of defining responses for every dialogue, Call Studio application developers using the VirtualAgentVoice element can manage this error similarly to error.noresource.
+
+   To define an exit state in the VirtualAgentVoice element:
+ * Add an event with Event Type set to "VXML Event"
+ * Select "error.badfetch" from the event list
+
+This exit state in VirtualAgentVoice element ensures a controlled call flow, even in cases where agent responses are missing.
 
 ##  Element Specifications Guide
 * [VirtualAgentVoice Element specifications guide](https://www-author3.cisco.com/content/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/customer_voice_portal/12-6-2/elementspecification/guide/ccvp_b_1262-element-specifications-guide/ccvp_m_1261-vav-element.html)
