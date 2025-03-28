@@ -11,6 +11,8 @@ Demonstrates the capabilities of Virtual Agent Voice Call Studio Element with gr
 * After the custom exit, value is collected  on-prem say as PIN number and added as Event Data using substitution for further use on Webex AI Agent.
 * At re-entry provide the desired Custom event name and Custom Data to be passed into the context.
 
+  * NOTE: For Scripted AI Agent Custom Event Name is Mandatory to be defined in AI Agent and same need to be passed while invoking the AI Agent Call Flow
+
 
 ## Application Enhancements
 * In the VirtualAgentVoice element, Webex AI Agent dropdown has been added.
@@ -35,6 +37,7 @@ Demonstrates the capabilities of Virtual Agent Voice Call Studio Element with gr
 * For Webex AI Agent flow: In the VirtualAgentVoice element, mention the Bot ID in the "Bot ID" field. This is a mandatory field.
 * Element data- “eventName” and “eventData” can be used to provide Event_Name and Data value specified in the custom payload from Webex AI Agent or Vendor side.
 * Re-entry after custom exit can be done through same/different VirtualAgentVoice element as per requirement.
+  * NOTE: For Scripted AI Agent Custom Event Name is Mandatory to be defined in AI Agent and same need to be passed while invoking the AI Agent Call Flow.
 
 ## Graceful Call Handling on Error
 * In VirtualAgentVoice element, add a event with event type as "VXML Event" and select "error.noresource" in event list. With this a new separate flow can be created for any noresource error. Refer the pdf attached for different types of noresource scenarios.
