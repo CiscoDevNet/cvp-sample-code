@@ -3,6 +3,9 @@
 # Application Virtual Agent Voice
 Demonstrates the capabilities of Virtual Agent Voice Call Studio Element with graceful call handling, custom exit and re-entry using Connector Type as Integration.
 
+## Download Instructions
+* The zip file must be downloaded from GitHub using “Download raw file” option (or via git clone / curl)
+
 ## Application Behaviour
 * User needs to select Connector Type as Integration from dropdown and Virtual Agent as Scripted and then add config ID and add mandatory desired event name to start event flow in the setting attribute of VirtualAgentVoice.
   * This setting value is mandatory for Integration.
@@ -18,7 +21,7 @@ Demonstrates the capabilities of Virtual Agent Voice Call Studio Element with gr
         var fixJSON1 = inputJSON.replace(/\\:/g,':');  
         var fixJSON2 = fixJSON1.replace(/\\,/g,',');
 
- # * NOTE: For Scripted, Custom Event Name is Mandatory to be defined and same need to be passed while invoking the Virtual Agent Voice Call Flow
+* NOTE: For Scripted, Custom Event Name is Mandatory to be defined and same need to be passed while invoking the Virtual Agent Voice Call Flow.
 
 
 ## Application Enhancements

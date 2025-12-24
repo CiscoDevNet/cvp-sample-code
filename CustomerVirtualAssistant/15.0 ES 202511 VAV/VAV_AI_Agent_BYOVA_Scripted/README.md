@@ -3,6 +3,9 @@
 # Application Virtual Agent Voice
 Demonstrates the capabilities of Virtual Agent Voice Call Studio Element with graceful call handling, custom exit and re-entry using Connector Type as Service App.
 
+## Download Instructions
+* The zip file must be downloaded from GitHub using “Download raw file” option (or via git clone / curl)
+
 ## Application Behaviour
 * User needs to select Connector Type as Service App from dropdown and Virtual Agent as Scripted to start event flow in the setting attribute of VirtualAgentVoice.
 * Add mandatory Config ID and Agent ID.

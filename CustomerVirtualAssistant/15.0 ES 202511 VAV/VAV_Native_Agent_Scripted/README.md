@@ -3,6 +3,9 @@
 # Application Virtual Agent Voice
 Demonstrates the capabilities of Virtual Agent Voice Call Studio Element with graceful call handling, custom exit and re-entry using  Connector Type as Webex CCAI.
 
+## Download Instructions
+* The zip file must be downloaded from GitHub using “Download raw file” option (or via git clone / curl)
+
 ## Application Behaviour
 * User needs to select Connector Type as Webex CCAI from dropdown and Virtual Agent as Scripted and then add mandatory desired event name to start event flow in the setting attribute of VirtualAgentVoice.
 * Streams the user audio via Universal Harness, receives the audio response, play it and loops the flow.
