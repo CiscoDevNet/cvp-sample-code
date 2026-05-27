@@ -20,7 +20,7 @@ Demonstrates the capabilities of Virtual Agent Voice Call Studio Element with gr
 
 ### NOTE: To use event data in VAV element with value having spaces or special characters follow the below steps :
 
-   Instead of directly accessiing the variable value, create a json format which uses the variable containing the value/prompt using either Set Value or similar element.
+   Instead of directly accessing the variable value, create a json format which uses the variable containing the value/prompt using either Set Value or similar element.
    Then it can be passed as a variable to VAV element.
    * Sample example - {"resp":"{Data.Session.response_session_data}"}
    and VAV event data - {"name":"resp"}
