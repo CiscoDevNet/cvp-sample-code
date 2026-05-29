@@ -18,6 +18,14 @@ Demonstrates the capabilities of Virtual Agent Voice Call Studio Element with gr
         var fixJSON1 = inputJSON.replace(/\\:/g,':');  
         var fixJSON2 = fixJSON1.replace(/\\,/g,',');
 
+### NOTE: To use event data in VAV element with value having spaces or special characters follow the below steps :
+
+   Instead of directly accessing the variable value, create a json format which uses the variable containing the value/prompt using either Set Value or similar element.
+   Then it can be passed as a variable to VAV element.
+   * Sample example - {"resp":"{Data.Session.response_session_data}"}
+   and VAV event data - {"name":"resp"}
+   It can accessed as {{name.resp}}.
+
 
 ## Application Enhancements
 * In the VirtualAgentVoice element, ConnectorType dropdown has been added.
